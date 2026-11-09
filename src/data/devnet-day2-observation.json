@@ -1,0 +1,78 @@
+{
+  "format": "setl8-devnet-day2-public-observation-v1",
+  "network": "devnet",
+  "generated_at": "2026-11-02T12:25:35Z",
+  "source": [
+    {
+      "file": "devnet-deployment.json",
+      "sha256": "d6272ac2e7f84fcdb904490bf1c9935de117313f0771a56ceee86365363651fd",
+      "bytes": "18002"
+    },
+    {
+      "file": "devnet-demo.md",
+      "sha256": "ee08e885c2f8a92d1f03d80e9648c3b880413d3160f3e6972086ad6ae8a4c663",
+      "bytes": "9195"
+    },
+    {
+      "file": "devnet-rehearsal.md",
+      "sha256": "901cfb3115d49dbd6849349b27b91135216401d756556082f5815132b4922705",
+      "bytes": "36778"
+    }
+  ],
+  "genesis_hash": "EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG",
+  "programs": {
+    "lev": {
+      "id": "HmkvQfgCMnihGzdZE1FTKVacZN76JS9bfEu2QBJBAdvY",
+      "sha256": "03b0333240a531af718f297d803d512efaf2cb5cd1edf21712e0734e179343ee",
+      "size_bytes": "862704"
+    },
+    "vault": {
+      "id": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z",
+      "sha256": "ef6bbe719c466006795c43eb1cf708a9e1fec42c92b4e29e7c66a9bf61a0f15c",
+      "size_bytes": "535712"
+    }
+  },
+  "account": {
+    "name": "A1",
+    "address": "A3ncHBKQRrRNKVaeH9WuhMmwZ22BNoKyeCFsxK6ZwpvU",
+    "trader": "7urBRSkXz6jAoz7j4QnVjgWWVLUxV6nzjZxNEWhxkLeF",
+    "trader_token_account": "2VTVHhX2HobDML2L49oqSkkVS8RiL21c87TitsmLH7j2",
+    "mint": "2kBKxj3TYz2UbQfVcJ5xBbWscC5hrALq7MLzJi3c1fTx",
+    "decimals": "6"
+  },
+  "reported": {
+    "claim": "71ufTEdhUJ8j7HUuyKvLSFWgtxPiL55vX7GsjYuYjCpW",
+    "claim_amount_micro_usdc": "200000000",
+    "paid_micro_usdc": "200000000",
+    "status": "closed: paid in full",
+    "balance_before_micro_usdc": "99933736000",
+    "balance_after_micro_usdc": "100133736000",
+    "delta_micro_usdc": "200000000",
+    "setup_liquidity_micro_usdc": "50000000000",
+    "added_for_payout_micro_usdc": "0"
+  },
+  "transactions": [
+    {
+      "action": "begin_heartbeat",
+      "signature": "49D7EhWDwaWBnAHiw5vWVVFhJTMgCBQMeYh88LHMYQ8YPzSoRFrVT7wVLfApbDT5hZxe4n89r4QYYo7kXmC9UoP4"
+    },
+    {
+      "action": "finalize_heartbeat",
+      "signature": "3WydkoKuJ4xagSJbLz62JgRV7dfr9CxnQovrntJ8veuYEX4Yppg3ufcQHLJJ5FyfcpYjR9jut6aU1sHEbjZ2LKgh"
+    },
+    {
+      "action": "finalize_pass",
+      "signature": "PhXjSTyGCZfQ8aceuDXwbiWsGBCppcXTGDz6iXnFB4p2aQCVsA7tEkb915dNARwnFM8Zf3CbhKpSrC6RMvpPLye"
+    },
+    {
+      "action": "reconcile_product",
+      "signature": "5KNZD3DmGpiuJytqxxfQB5uo9czDVWV8Y3hPAi9SWnVbuqr8rcYS9GqiYfPcviCr2ejaxJJcCaVVHcgemF3M97JR"
+    },
+    {
+      "action": "settle_claims",
+      "signature": "5pJzbJEzCQF553XDF8gZbeY2zyxoHCrtMKFAPra8rSNQRNA5tNFpYAyj5Qbdwnw2gxshjbYWNQTso8B16dJaoPet"
+    }
+  ],
+  "receipt_verification": null,
+  "scope": "Existing public rehearsal history; not connected-app execution or signed-in wallet ownership. Finalized receipt and token-delta verification are required before an app-paid claim."
+}

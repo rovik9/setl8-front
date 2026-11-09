@@ -1,0 +1,99 @@
+{
+  "cycle": {
+    "active": false,
+    "eligible_count": "1",
+    "id": "1",
+    "minimum_gap_s": "432000",
+    "next_cycle_eligible_at_unix_s": "1794053993",
+    "next_payout_at_unix_s": null,
+    "processed_count": "1",
+    "started_at_unix_s": "1793621993",
+    "status": "closed"
+  },
+  "observed_chain_unix_s": "1793919330",
+  "open_claims_count": "0",
+  "open_claims_total_atoms": "0",
+  "pools": [
+    {
+      "address": "UjqJZRCALei1whzfLJbX3J5p22hRyYrVF7v3xNPiKPi",
+      "balance_atoms": "50099325000",
+      "decimals": "6",
+      "frozen": false,
+      "mint": "2kBKxj3TYz2UbQfVcJ5xBbWscC5hrALq7MLzJi3c1fTx",
+      "symbol": "USDC"
+    },
+    {
+      "address": "HEhuquTgApHjVcAxtJ1HoURfru9WU8T9fUqhVGTRsuvF",
+      "balance_atoms": "0",
+      "decimals": "6",
+      "frozen": false,
+      "mint": "9qfVj2AgFpWVM4jowh2nNkQHcjKECPhJnWbkW9y71BVo",
+      "symbol": "USDT"
+    }
+  ],
+  "product": {
+    "active": true,
+    "pause_reason": "0"
+  },
+  "programs": [
+    {
+      "allocated_data_size": "862749",
+      "image_sha256": "03b0333240a531af718f297d803d512efaf2cb5cd1edf21712e0734e179343ee",
+      "image_size": "862704",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "program": "HmkvQfgCMnihGzdZE1FTKVacZN76JS9bfEu2QBJBAdvY",
+      "program_data": "3yb1VTr3Vnkesw1KZpv7ix74doyXEow373AxWR5inxF5",
+      "program_data_sha256": "87c7656dd2c1d35c76e6aa5c63d85d1c141b8924eb6201ff47358ab57c0d616c",
+      "upgrade_authority": "GxDJcsyKDk7iS3eAhDGigsTWmuBvzY5z8WkNhVPP2a9p",
+      "upgrade_slot": "517131208",
+      "zero_padding_size": "0"
+    },
+    {
+      "allocated_data_size": "535757",
+      "image_sha256": "ef6bbe719c466006795c43eb1cf708a9e1fec42c92b4e29e7c66a9bf61a0f15c",
+      "image_size": "535712",
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "program": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z",
+      "program_data": "AkTjG81Ky68b7S1EcvoC1vpBcysUAjRkzHxv8pBypRVb",
+      "program_data_sha256": "1ec1e525687063198dbc9f32e9990d43fbd2f4a926b2baeb8d803c5a32fc7941",
+      "upgrade_authority": "GxDJcsyKDk7iS3eAhDGigsTWmuBvzY5z8WkNhVPP2a9p",
+      "upgrade_slot": "517131100",
+      "zero_padding_size": "0"
+    }
+  ],
+  "trading_config": {
+    "paused": "0"
+  },
+  "api_version": "1",
+  "vault_status_version": "1",
+  "network": "devnet",
+  "status": "observed",
+  "vault_state": "G7qpP8L2kXGP7VYuvhioEQLEuWxUngxDmxqxEqnpUCbT",
+  "vault_program": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z",
+  "last_observed_at_unix_ms": "1793919330000",
+  "served_at_unix_ms": "1793919330100",
+  "cache_ttl_seconds": "60",
+  "refresh_error": null,
+  "provenance": [
+    {
+      "operator": "solana_public_devnet",
+      "slot": "1",
+      "commitment": "finalized",
+      "received_at_unix_ms": "1793919330000",
+      "observed_chain_unix_s": "1793919330",
+      "genesis_response_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "program_response_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "state_response_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "operator": "onfinality_public_devnet",
+      "slot": "1",
+      "commitment": "finalized",
+      "received_at_unix_ms": "1793919330000",
+      "observed_chain_unix_s": "1793919330",
+      "genesis_response_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "program_response_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "state_response_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ]
+}

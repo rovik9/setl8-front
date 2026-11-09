@@ -1,0 +1,350 @@
+{
+  "format": "setl8-front-devnet-proof",
+  "version": 1,
+  "source": {
+    "manifest": {
+      "file": "devnet-deployment.json",
+      "sha256": "d6272ac2e7f84fcdb904490bf1c9935de117313f0771a56ceee86365363651fd",
+      "bytes": 18002
+    },
+    "demo": {
+      "file": "devnet-demo.md",
+      "sha256": "ee08e885c2f8a92d1f03d80e9648c3b880413d3160f3e6972086ad6ae8a4c663",
+      "bytes": 9195
+    }
+  },
+  "cluster": "devnet",
+  "genesis_hash": "EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG",
+  "programs": {
+    "lev": {
+      "id": "HmkvQfgCMnihGzdZE1FTKVacZN76JS9bfEu2QBJBAdvY",
+      "size_bytes": 862704,
+      "sha256": "03b0333240a531af718f297d803d512efaf2cb5cd1edf21712e0734e179343ee"
+    },
+    "vault": {
+      "id": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z",
+      "size_bytes": 535712,
+      "sha256": "ef6bbe719c466006795c43eb1cf708a9e1fec42c92b4e29e7c66a9bf61a0f15c"
+    }
+  },
+  "test_mints": {
+    "decimals": 6,
+    "usdc": "2kBKxj3TYz2UbQfVcJ5xBbWscC5hrALq7MLzJi3c1fTx",
+    "usdt": "9qfVj2AgFpWVM4jowh2nNkQHcjKECPhJnWbkW9y71BVo"
+  },
+  "accounts": {
+    "lev_config": "BySmg4NH3BJfBgZcPFSGJP3acRmqySGE2LvNk8GUF8xn",
+    "lev_rule_set": "NFByy5LbVEvHCuEcuC1WVpZ5ModpNQb4nEXYdNhBTmj",
+    "vault_state": "G7qpP8L2kXGP7VYuvhioEQLEuWxUngxDmxqxEqnpUCbT",
+    "vault_product_registry": "FUVukP8gz8kpxXXt3UbE4C3UCAcp31gRMqEacQvUP9pv",
+    "vault_payout_tally": "8MNMVmXC2zDyrfuy2ABAya4mrNHFsCeXNhf6VQ8paaBK",
+    "usdc_pool": "UjqJZRCALei1whzfLJbX3J5p22hRyYrVF7v3xNPiKPi",
+    "usdt_pool": "HEhuquTgApHjVcAxtJ1HoURfru9WU8T9fUqhVGTRsuvF"
+  },
+  "challenge": {
+    "tiers": [
+      {
+        "tier": 0,
+        "account_size_usd": 2500,
+        "price_usd": 30
+      },
+      {
+        "tier": 1,
+        "account_size_usd": 5000,
+        "price_usd": 55
+      },
+      {
+        "tier": 2,
+        "account_size_usd": 10000,
+        "price_usd": 99
+      },
+      {
+        "tier": 3,
+        "account_size_usd": 15000,
+        "price_usd": 145
+      },
+      {
+        "tier": 4,
+        "account_size_usd": 20000,
+        "price_usd": 189
+      },
+      {
+        "tier": 5,
+        "account_size_usd": 25000,
+        "price_usd": 235
+      },
+      {
+        "tier": 6,
+        "account_size_usd": 50000,
+        "price_usd": 489
+      },
+      {
+        "tier": 7,
+        "account_size_usd": 75000,
+        "price_usd": 689
+      },
+      {
+        "tier": 8,
+        "account_size_usd": 100000,
+        "price_usd": 859
+      },
+      {
+        "tier": 9,
+        "account_size_usd": 200000,
+        "price_usd": 1599
+      }
+    ],
+    "challenge_fee_bps": 40,
+    "pass_delay_secs": 86400,
+    "market_count": 21
+  },
+  "payout": {
+    "claim": "71ufTEdhUJ8j7HUuyKvLSFWgtxPiL55vX7GsjYuYjCpW",
+    "pool_funding": "test liquidity deposited into the payout pool at setup (test USDC minted by the test mint authority), plus the challenge fee splits; no further deposit was needed for the payout",
+    "trader_balance_before_micro_usdc": "99933736000",
+    "trader_balance_after_micro_usdc": "100133736000"
+  },
+  "sections": [
+    {
+      "n": 1,
+      "title": "The challenge purchase (open_account)",
+      "summary": "The trader paid the challenge price plus the 0.4 % fee in the test stablecoin in one transaction; the vault split the price between its payout pool and the platform wallet, and recorded the challenge.",
+      "pending": null,
+      "items": [
+        {
+          "label": "open_account A1",
+          "kind": "tx",
+          "value": "5FntrpmrjQD3KKrcm8Y9d46ciYzHgjDSph8Gw4bJeGWAS3dgX971B9W2UqwFEm7xfQ7yCkwKxzDzYNM6UJD4zeiv"
+        },
+        {
+          "label": "A1 trading account",
+          "kind": "address",
+          "value": "A3ncHBKQRrRNKVaeH9WuhMmwZ22BNoKyeCFsxK6ZwpvU"
+        },
+        {
+          "label": "A1 trader wallet",
+          "kind": "address",
+          "value": "7urBRSkXz6jAoz7j4QnVjgWWVLUxV6nzjZxNEWhxkLeF"
+        },
+        {
+          "label": "vault state",
+          "kind": "address",
+          "value": "G7qpP8L2kXGP7VYuvhioEQLEuWxUngxDmxqxEqnpUCbT"
+        },
+        {
+          "label": "payout pool",
+          "kind": "address",
+          "value": "UjqJZRCALei1whzfLJbX3J5p22hRyYrVF7v3xNPiKPi"
+        },
+        {
+          "label": "test stablecoin mint",
+          "kind": "address",
+          "value": "2kBKxj3TYz2UbQfVcJ5xBbWscC5hrALq7MLzJi3c1fTx"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "title": "The first journal batches (the winning history)",
+      "summary": "The evaluator posted the trader's signed trades as journal batches; the program re-checked every rule on chain and the account's equity and sequence advanced only through them.",
+      "pending": null,
+      "items": [
+        {
+          "label": "post_journal ev=5 pr=3 A1",
+          "kind": "tx",
+          "value": "4uTUUubVf3Snh6FZqwDM7KRAXTxkAdk45oGRp7D2CFVkvySDz21ikqGcPWRY9fDVJbn21xpHUeKPVPFKz961e5qh"
+        },
+        {
+          "label": "post_journal ev=4 pr=3 A1",
+          "kind": "tx",
+          "value": "4smRN8MKiFdjBEmGV852LUpPrtTvYH4LN7oWpWNzRVhmwBp9SMuGGWMwuUYhfis4AaBiU9cuMCQvoNakt8pWLuUn"
+        },
+        {
+          "label": "post_journal ev=4 pr=3 A1",
+          "kind": "tx",
+          "value": "5CHhUkRP2Er1wuPhrF2Ge6M13ozDbKBcZdQ4LmW5QbYp8L5AqUk7fnUpKPrTagtCe7L8rPqnrHHVTJZsCukaE7b3"
+        },
+        {
+          "label": "post_journal ev=4 pr=3 A1",
+          "kind": "tx",
+          "value": "36h5d1mCTnYnZDYcSGP7EWpbqg72jYFbui53eJiY4ynHfrvosjw1PqK2W8XRYBKJoTGfM9yN22w7LEmBtELJDbfM"
+        },
+        {
+          "label": "post_journal ev=5 pr=1 A1",
+          "kind": "tx",
+          "value": "3KpJdiSxC8RUiD795P3zQgMW16Ctb1KhP5VhB7SfwABRoixT8Yfngn2hL5kYX7wFVbW15R18v98SvGK5uueY42iS"
+        },
+        {
+          "label": "A1 trading account",
+          "kind": "address",
+          "value": "A3ncHBKQRrRNKVaeH9WuhMmwZ22BNoKyeCFsxK6ZwpvU"
+        },
+        {
+          "label": "A1 trader wallet",
+          "kind": "address",
+          "value": "7urBRSkXz6jAoz7j4QnVjgWWVLUxV6nzjZxNEWhxkLeF"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "title": "Phase 1 passed: request_advance and confirm_pass",
+      "summary": "The account met the phase-1 target; the trader asked to advance and the evaluator confirmed, so the program moved the account to phase 2.",
+      "pending": null,
+      "items": [
+        {
+          "label": "request_advance A1",
+          "kind": "tx",
+          "value": "2s18LLMijwb7eaQHnT4j6iXf8gzDczowLgBFiPvhJ6tsNCMzQ3i7FC7dx2cXTYUALdvDdiE47NUEr9ErgZLtpdY7"
+        },
+        {
+          "label": "confirm_pass A1",
+          "kind": "tx",
+          "value": "U7H8c65YTkgjhMYfkd1AB7bCfCmD7m2jC7Se2pXEPQ18vCghYDZUczLKZvRJQfPuKvKTJZ45YrZ2wSoYGzR8Rvk"
+        },
+        {
+          "label": "A1 trading account",
+          "kind": "address",
+          "value": "A3ncHBKQRrRNKVaeH9WuhMmwZ22BNoKyeCFsxK6ZwpvU"
+        },
+        {
+          "label": "A1 trader wallet",
+          "kind": "address",
+          "value": "7urBRSkXz6jAoz7j4QnVjgWWVLUxV6nzjZxNEWhxkLeF"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "title": "Phase 2 passed: request_advance and confirm_pass",
+      "summary": "The account met the phase-2 target and the pass is confirmed; the program now holds it for the one-day pass delay before the payout can be queued.",
+      "pending": null,
+      "items": [
+        {
+          "label": "request_advance A1",
+          "kind": "tx",
+          "value": "4sJZBJqxJ4uDz8ahap8bRj7wyZNU2ZgGB7r8tmWxqGyTqWCZctNxdgwiaQ9gNy1TcujbTD54rhDBCFMy7PuwPMnt"
+        },
+        {
+          "label": "confirm_pass A1",
+          "kind": "tx",
+          "value": "sZYPy7wnV4NsXJmFgwUEJcMY9pMagV5v7oVSyinQN3m9Lk1ryHd5QKej5DXHcxaLWdJvUykPeFD4QjrHm9efc4i"
+        },
+        {
+          "label": "A1 trading account",
+          "kind": "address",
+          "value": "A3ncHBKQRrRNKVaeH9WuhMmwZ22BNoKyeCFsxK6ZwpvU"
+        },
+        {
+          "label": "A1 trader wallet",
+          "kind": "address",
+          "value": "7urBRSkXz6jAoz7j4QnVjgWWVLUxV6nzjZxNEWhxkLeF"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "title": "finalize_pass and the queued payout claim",
+      "summary": "After the pass delay the program started the funded phase and the vault queued a payout claim for the trader; the claim account is owned by the vault.",
+      "pending": null,
+      "items": [
+        {
+          "label": "finalize_pass A1",
+          "kind": "tx",
+          "value": "PhXjSTyGCZfQ8aceuDXwbiWsGBCppcXTGDz6iXnFB4p2aQCVsA7tEkb915dNARwnFM8Zf3CbhKpSrC6RMvpPLye"
+        },
+        {
+          "label": "A1 trading account",
+          "kind": "address",
+          "value": "A3ncHBKQRrRNKVaeH9WuhMmwZ22BNoKyeCFsxK6ZwpvU"
+        },
+        {
+          "label": "A1 trader wallet",
+          "kind": "address",
+          "value": "7urBRSkXz6jAoz7j4QnVjgWWVLUxV6nzjZxNEWhxkLeF"
+        },
+        {
+          "label": "payout claim",
+          "kind": "address",
+          "value": "71ufTEdhUJ8j7HUuyKvLSFWgtxPiL55vX7GsjYuYjCpW"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "title": "The heartbeat and the settlement",
+      "summary": "Anyone can run the vault's heartbeat: it reconciled the vault's books with the trading program's tally, froze the pool balances, paid the claim to the trader's token account and closed the cycle.",
+      "pending": null,
+      "items": [
+        {
+          "label": "reconcile_product",
+          "kind": "tx",
+          "value": "5KNZD3DmGpiuJytqxxfQB5uo9czDVWV8Y3hPAi9SWnVbuqr8rcYS9GqiYfPcviCr2ejaxJJcCaVVHcgemF3M97JR"
+        },
+        {
+          "label": "begin_heartbeat",
+          "kind": "tx",
+          "value": "49D7EhWDwaWBnAHiw5vWVVFhJTMgCBQMeYh88LHMYQ8YPzSoRFrVT7wVLfApbDT5hZxe4n89r4QYYo7kXmC9UoP4"
+        },
+        {
+          "label": "settle_claims A1 batch 1",
+          "kind": "tx",
+          "value": "5pJzbJEzCQF553XDF8gZbeY2zyxoHCrtMKFAPra8rSNQRNA5tNFpYAyj5Qbdwnw2gxshjbYWNQTso8B16dJaoPet"
+        },
+        {
+          "label": "finalize_heartbeat",
+          "kind": "tx",
+          "value": "3WydkoKuJ4xagSJbLz62JgRV7dfr9CxnQovrntJ8veuYEX4Yppg3ufcQHLJJ5FyfcpYjR9jut6aU1sHEbjZ2LKgh"
+        },
+        {
+          "label": "A1 trading account",
+          "kind": "address",
+          "value": "A3ncHBKQRrRNKVaeH9WuhMmwZ22BNoKyeCFsxK6ZwpvU"
+        },
+        {
+          "label": "A1 trader wallet",
+          "kind": "address",
+          "value": "7urBRSkXz6jAoz7j4QnVjgWWVLUxV6nzjZxNEWhxkLeF"
+        },
+        {
+          "label": "payout claim",
+          "kind": "address",
+          "value": "71ufTEdhUJ8j7HUuyKvLSFWgtxPiL55vX7GsjYuYjCpW"
+        },
+        {
+          "label": "payout pool",
+          "kind": "address",
+          "value": "UjqJZRCALei1whzfLJbX3J5p22hRyYrVF7v3xNPiKPi"
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "title": "The trader's balance before and after",
+      "summary": "The payout landed in the trader's own token account: the balance rose by 200.000000 USDC (the claim, paid in full when the pool covers the queue).",
+      "pending": null,
+      "items": [
+        {
+          "label": "settle_claims A1 batch 1",
+          "kind": "tx",
+          "value": "5pJzbJEzCQF553XDF8gZbeY2zyxoHCrtMKFAPra8rSNQRNA5tNFpYAyj5Qbdwnw2gxshjbYWNQTso8B16dJaoPet"
+        },
+        {
+          "label": "A1 trading account",
+          "kind": "address",
+          "value": "A3ncHBKQRrRNKVaeH9WuhMmwZ22BNoKyeCFsxK6ZwpvU"
+        },
+        {
+          "label": "A1 trader wallet",
+          "kind": "address",
+          "value": "7urBRSkXz6jAoz7j4QnVjgWWVLUxV6nzjZxNEWhxkLeF"
+        },
+        {
+          "label": "trader USDC token account",
+          "kind": "address",
+          "value": "2VTVHhX2HobDML2L49oqSkkVS8RiL21c87TitsmLH7j2"
+        }
+      ]
+    }
+  ]
+}

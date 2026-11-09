@@ -1,0 +1,609 @@
+/* F2 page scope. The approved global CX layer is unchanged. */
+.buy-page {
+  min-height: 100vh;
+  background: var(--bg, #101116);
+  color: var(--cx-text, #f3f4f6);
+}
+.buy-header nav {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.8rem;
+}
+.buy-header nav a,
+.buy-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.buy-network {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: 0.7rem 1rem;
+  border-block: 1px solid #ffffff15;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  background: #59c5df09;
+  color: #b9dce8;
+}
+.buy-network > span:last-child {
+  margin-left: 1.2rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  color: #9a9b91;
+}
+.buy-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #59c5df;
+}
+.buy-main {
+  padding-top: 3.8rem;
+}
+.buy-intro {
+  max-width: 43rem;
+  margin-bottom: 3.5rem;
+}
+.buy-intro h1 {
+  font-size: clamp(3rem, 6.3vw, 5.4rem);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+  font-weight: 520;
+  margin: 0.9rem 0 1.4rem;
+}
+.buy-intro h1 span {
+  color: var(--cx-accent, #59c5df);
+}
+.buy-intro > p:last-child {
+  max-width: 32rem;
+  color: #aaa9a3;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+.buy-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(20rem, 0.9fr);
+  gap: 2.8rem;
+  align-items: start;
+}
+.buy-section-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  color: #95958d;
+  margin-bottom: 1.5rem;
+}
+.buy-picker .cx-tier-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.buy-picker .cx-tier {
+  min-width: 0;
+}
+.buy-picker .cx-tiers {
+  min-width: 0;
+}
+.buy-recorded-note {
+  color: #92948b;
+  font-size: 0.72rem;
+  line-height: 1.6;
+  margin-top: 1.5rem;
+  max-width: 34rem;
+}
+.buy-review {
+  background: #181a20;
+  border: 1px solid #ffffff14;
+  border-radius: 14px;
+  padding: 1.7rem;
+  min-width: 0;
+}
+.buy-review h2 {
+  font-size: 1.65rem;
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+  font-weight: 500;
+  margin-bottom: 1.7rem;
+}
+.buy-wallet {
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid #ffffff14;
+}
+.buy-wallet > label,
+.buy-terms > span {
+  display: block;
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  color: #9d9e94;
+  font-family: "IBM Plex Mono", monospace;
+  margin-bottom: 0.8rem;
+}
+.buy-wallet p {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: #b7b7ad;
+}
+.buy-wallet code {
+  display: block;
+  font-size: 0.66rem;
+  line-height: 1.7;
+  color: #dedfd5;
+  overflow-wrap: anywhere;
+  margin: 0.7rem 0;
+}
+.buy-wallet select {
+  max-width: 100%;
+  width: 100%;
+  padding: 0.7rem;
+  background: #11120f;
+  color: #e8e9df;
+  border: 1px solid #ffffff24;
+  border-radius: 6px;
+  font-size: 0.7rem;
+}
+.buy-wallet-list {
+  display: grid;
+  gap: 0.7rem;
+}
+.buy-wallet-list small {
+  display: block;
+  color: #aaa89f;
+  font-size: 0.7rem;
+  margin-top: 0.4rem;
+}
+.buy-text-button {
+  border: 0;
+  background: none;
+  color: #a4cdd9;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-size: 0.73rem;
+  cursor: pointer;
+}
+.buy-terms {
+  padding: 1.5rem 0 0;
+}
+.buy-terms > strong {
+  font-size: 2.1rem;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+.buy-terms > small {
+  display: block;
+  color: #92958a;
+  font-size: 0.7rem;
+  margin-top: 0.3rem;
+}
+.buy-review dl {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: 0.7rem;
+  font-size: 0.73rem;
+  margin: 1.4rem 0;
+}
+.buy-review dt {
+  color: #95998d;
+}
+.buy-review dd {
+  margin: 0;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+.buy-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  display: grid;
+  gap: 0.7rem;
+  font-size: 0.72rem;
+  color: #bfc3b3;
+  line-height: 1.5;
+}
+.buy-checklist li {
+  display: flex;
+  gap: 0.55rem;
+  align-items: flex-start;
+}
+.buy-checklist svg {
+  color: #59c5df;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.buy-primary {
+  width: 100%;
+  margin-top: 0.65rem;
+  min-height: 46px;
+  font-size: 0.8rem;
+  white-space: normal;
+}
+.buy-gate {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  color: #969c88;
+  line-height: 1.6;
+  font-size: 0.69rem;
+  margin: 1rem 0;
+}
+.buy-gate svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.buy-gate p {
+  margin: 0;
+}
+.buy-error {
+  font-size: 0.76rem;
+  color: #edc4b2;
+  border: 1px solid #b77d5744;
+  border-radius: 6px;
+  background: #b77d570b;
+  padding: 0.9rem;
+  line-height: 1.65;
+  margin: 1rem 0;
+  overflow-wrap: anywhere;
+}
+.buy-details {
+  border-top: 1px solid #ffffff14;
+  margin-top: 1.1rem;
+  padding-top: 1rem;
+  color: #9da38f;
+  font-size: 0.69rem;
+  line-height: 1.7;
+}
+.buy-details summary {
+  cursor: pointer;
+  color: #c3c8b8;
+  padding: 0.3rem 0;
+}
+.buy-details code {
+  font-size: 0.62rem;
+  overflow-wrap: anywhere;
+}
+.buy-contract-note {
+  display: flex;
+  gap: 1rem;
+  max-width: 46rem;
+  border-top: 1px solid #ffffff15;
+  margin-top: 3.5rem;
+  padding: 2rem 0;
+}
+.buy-contract-note > svg {
+  color: #a4b28a;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+.buy-contract-note h3 {
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+.buy-contract-note p {
+  font-size: 0.76rem;
+  color: #96998e;
+  line-height: 1.75;
+  margin: 0;
+}
+.buy-footer {
+  border-top: 1px solid #ffffff15;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem 0 2.5rem;
+  font-size: 0.69rem;
+  color: #90978a;
+}
+.buy-recovery {
+  margin-top: 1.5rem;
+}
+.buy-recovery > svg {
+  color: #59c5df;
+}
+.buy-recovery h3 {
+  font-size: 1.1rem;
+  margin: 0.7rem 0;
+}
+.buy-recovery p {
+  font-size: 0.76rem;
+  line-height: 1.7;
+  color: #b4baa8;
+}
+.buy-recovery dd {
+  text-align: left;
+}
+.buy-recovery dl {
+  grid-template-columns: 1fr;
+  gap: 0.4rem;
+}
+.buy-recovery dt {
+  margin-top: 0.4rem;
+}
+.buy-recovery dd a {
+  color: #a4d7e7;
+  font-size: 0.69rem;
+}
+.buy-recovery .buy-fine {
+  font-size: 0.66rem;
+}
+.buy-mock-mark {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  text-align: center;
+  background: #f3d76c;
+  color: #24200e;
+  padding: 0.6rem;
+  font:
+    bold 0.7rem/1.4 "IBM Plex Mono",
+    monospace;
+  letter-spacing: 0.03em;
+}
+.buy-page button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+@media (min-width: 1250px) {
+  .buy-picker .cx-tier-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 900px) {
+  .buy-layout {
+    grid-template-columns: 1fr;
+    gap: 2.2rem;
+  }
+  .buy-review {
+    max-width: none;
+  }
+  .buy-picker .cx-tier-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .buy-intro {
+    margin-bottom: 2.5rem;
+  }
+}
+@media (max-width: 560px) {
+  .buy-header {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-block: 1.2rem;
+  }
+  .buy-header nav {
+    gap: 1rem;
+    font-size: 0.7rem;
+  }
+  .buy-network {
+    font-size: 0.62rem;
+  }
+  .buy-network > span:last-child {
+    display: none;
+  }
+  .buy-main {
+    padding-top: 2.5rem;
+  }
+  .buy-intro h1 {
+    font-size: 3.35rem;
+  }
+  .buy-intro > p:last-child {
+    font-size: 0.86rem;
+  }
+  .buy-picker .cx-tier-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .buy-review {
+    padding: 1.25rem;
+  }
+  .buy-footer {
+    flex-direction: column;
+  }
+  .buy-contract-note {
+    margin-top: 2rem;
+  }
+  .buy-mock-mark {
+    font-size: 0.58rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .buy-page *,
+  .buy-page *::before,
+  .buy-page *::after {
+    scroll-behavior: auto;
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Public header links stay in normal flow on phones; no mobile menu is used here. */
+.buy-header nav {
+  position: static;
+  inset: auto;
+  background: none;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  backdrop-filter: none;
+}
+@media (max-width: 560px) {
+  .buy-header {
+    align-items: flex-start;
+  }
+  .buy-header nav {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+.buy-owner-review {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.72rem;
+  line-height: 1.6;
+  color: #c3d2dd;
+  margin-top: 1rem;
+}
+.buy-owner-review input {
+  flex-shrink: 0;
+  accent-color: var(--cx-accent);
+  margin-top: 0.3rem;
+}
+.buy-details pre {
+  max-height: 22rem;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+  font-size: 0.75rem;
+}
+
+.checkout-simple {
+  background: #08090b;
+}
+.checkout-body {
+  width: min(100% - 32px, 460px);
+  margin: 45px auto 80px;
+}
+.checkout-body > h1 {
+  font-size: 2rem;
+  font-weight: 550;
+  letter-spacing: -0.035em;
+}
+.checkout-network {
+  color: #8dcde1;
+  font-size: 0.76rem;
+  margin: 0 0 18px;
+}
+.checkout-steps {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0 0 18px;
+  margin: 0 0 22px;
+  border-bottom: 1px solid #2b303a;
+  font-size: 0.78rem;
+  color: #8c96a5;
+}
+.checkout-steps [aria-current] {
+  color: #91d1e6;
+}
+.checkout-summary {
+  padding: 24px;
+  background: #101216;
+  border: 1px solid #2a3039;
+  border-radius: 14px;
+}
+.checkout-size {
+  display: block;
+  color: #a7b0bd;
+  font-size: 0.85rem;
+}
+.checkout-size select {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #3a414e;
+  border-radius: 8px;
+  background: #171b22;
+  color: #f5f6f8;
+  font-size: 1.3rem;
+}
+.checkout-cost {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 12px;
+  row-gap: 10px;
+  margin: 24px 0 16px;
+  font-size: 0.88rem;
+}
+.checkout-cost dt {
+  color: #a0aab8;
+}
+.checkout-cost dd {
+  text-align: right;
+  margin: 0;
+}
+.checkout-cost .checkout-total {
+  padding-top: 14px;
+  border-top: 1px solid #303744;
+  color: #f3f6fa;
+  font-weight: 550;
+}
+.checkout-summary h2 {
+  font-size: 1.15rem;
+  font-weight: 520;
+  margin: 25px 0 12px;
+}
+.checkout-summary > .button {
+  width: 100%;
+  margin-top: 10px;
+  min-height: 46px;
+}
+.checkout-summary .buy-details {
+  margin-top: 20px;
+}
+.checkout-summary .buy-details code,
+.checkout-summary .buy-details a {
+  overflow-wrap: anywhere;
+  font-size: 0.75rem;
+}
+.checkout-summary .buy-details dl {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+.checkout-summary .buy-details dd {
+  margin: 0 0 12px;
+}
+.checkout-summary .buy-details summary {
+  padding-block: 12px;
+  min-height: 44px;
+  font-size: 0.85rem;
+}
+.checkout-summary .buy-details p {
+  color: #9ea9b9;
+  line-height: 1.65;
+  font-size: 0.8rem;
+}
+.checkout-embedded {
+  min-height: 0;
+  background: transparent;
+}
+.checkout-embedded .checkout-body {
+  width: 100%;
+  margin: 8px 0 0;
+}
+.checkout-embedded .checkout-summary {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
+}
+.checkout-simple .buy-fine {
+  color: #a2adbc;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+.checkout-simple .buy-owner-review {
+  font-size: 0.8rem;
+  color: #b8c1ce;
+}
+@media (max-width: 500px) {
+  .checkout-summary {
+    padding: 18px;
+  }
+  .checkout-body {
+    margin-top: 28px;
+  }
+  .checkout-simple .buy-header nav {
+    display: none;
+  }
+  .checkout-cost {
+    font-size: 0.8rem;
+    gap: 10px;
+  }
+}

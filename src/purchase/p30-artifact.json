@@ -1,0 +1,8 @@
+{
+  "version": "0.1.0-dev.5",
+  "alias": "@setl8/p30-sdk",
+  "profile": "p30-devnet-2026-10-31-v1",
+  "npm_sha256": "3e33090cf9193fd909f57ed75e10f9e59b9409e3c8a8f6c186272d8ee185f86d",
+  "descriptor_sha256": "077ff530b2e8b48e676622dd1d5b1369e9c99d5c3ddcd8e5e7edd315783bd6b6",
+  "source_archive_sha256": "b95cd2ccc6351c393e98db4acd069df7df23ee027e155d85b04c5559fec4e84f"
+}

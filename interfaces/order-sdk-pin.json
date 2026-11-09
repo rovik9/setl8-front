@@ -1,0 +1,24 @@
+{
+  "archive_sha256": "5acde8df3fc4be31dbcb80106b7a7d491a5e60bd8d37d67da62dda0d19e33fbd",
+  "content_fingerprint_sha256": "4467253fc555a2f64822e15341f36297f4b32225078ac6891850b7f270daace1",
+  "deployment_verified": false,
+  "profile": "setl8-sdk-dev-v1",
+  "sdk_version": "0.1.0-dev.4",
+  "artifact_members_verified": 294,
+  "selected_files": {
+    "packages/setl8-order-codec/src/order.ts": {
+      "source": "packages/typescript/src/order.ts",
+      "sha256": "504e485852db9a8a716461620b524bcc80e562c8347b3e38bf2a7978a65f7c6c"
+    },
+    "packages/setl8-order-codec/src/generated.ts": {
+      "source": "packages/typescript/src/generated.ts",
+      "sha256": "9e203a5e9d534c0fc2c8ea1f458dcc7ab327837505fc7d57329545cedb86a5b4"
+    },
+    "dependencies/sdk-orders.json": {
+      "source": "fixtures/orders.json",
+      "sha256": "2ce2578c62e06aa5b4cee216f922fa3eba70723368591893bff18c5485445074"
+    }
+  },
+  "source_archive": "dependencies/setl8-sdk-0.1.0-dev.4.tar.gz",
+  "packaging": "Frontend-owned order-only package; unchanged accepted TypeScript order.ts + generated.ts. Does not bundle signing, RPC or transaction APIs."
+}

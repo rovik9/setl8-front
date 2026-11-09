@@ -1,0 +1,966 @@
+.account-page {
+  min-height: 100vh;
+  background: var(--bg, #101116);
+  color: var(--cx-text);
+}
+.account-top {
+  min-height: 100px;
+  padding: 16px 3.5%;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  border-bottom: 1px solid var(--cx-hairline);
+}
+.account-top .brand img {
+  width: 70px;
+  height: 70px;
+}
+.account-top nav {
+  display: flex;
+  gap: 1.7rem;
+  font-size: 0.8rem;
+  align-items: center;
+}
+.account-top nav a {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+.account-network {
+  margin-left: auto;
+  font:
+    0.6rem "IBM Plex Mono",
+    monospace;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #a2bdc9;
+}
+.account-network i {
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: var(--cx-accent);
+}
+.account-workspace {
+  display: grid;
+  grid-template-columns: 238px minmax(0, 1fr);
+  max-width: 1560px;
+  margin: auto;
+}
+.account-sidebar {
+  padding: 2.7rem 1.3rem;
+  border-right: 1px solid var(--cx-hairline);
+}
+.account-kicker {
+  font:
+    0.58rem/1.6 "IBM Plex Mono",
+    monospace;
+  letter-spacing: 0.12em;
+  color: #a3a8b6;
+}
+.account-sidebar > a {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.9rem 0.8rem;
+  margin: 0.35rem 0;
+  border-radius: 8px;
+  color: #aaaebc;
+  font-size: 0.77rem;
+}
+.account-sidebar > a.active {
+  background: #59c5df0c;
+  border: 1px solid #59c5df24;
+  color: #92d9e9;
+}
+.account-sidebar > a.active svg:last-child {
+  margin-left: auto;
+}
+.account-sidebar-note {
+  margin: 4.5rem 0.6rem 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--cx-hairline);
+}
+.account-sidebar-note h3 {
+  font-size: 1.15rem;
+  line-height: 1.3;
+  margin: 0.7rem 0;
+}
+.account-sidebar-note p,
+.account-sidebar-note small {
+  color: #a3a8b6;
+  font-size: 0.72rem;
+  line-height: 1.65;
+}
+.account-sidebar-note .button {
+  white-space: normal;
+  font-size: 0.68rem;
+  min-height: 42px;
+  margin: 1rem 0;
+}
+.account-sidebar-note small {
+  display: block;
+  font-size: 0.64rem;
+}
+.account-content {
+  min-width: 0;
+  padding: 2.8rem clamp(20px, 3.3vw, 54px) 0;
+}
+.account-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.account-heading h1 {
+  font-size: clamp(2.5rem, 4.3vw, 3.8rem);
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  margin: 0.4rem 0;
+  line-height: 1.05;
+}
+.account-heading h1 span {
+  color: var(--cx-accent);
+}
+.account-heading h2 {
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  letter-spacing: -0.04em;
+  font-weight: 500;
+  margin: 0.6rem 0;
+}
+.account-heading p:last-child {
+  color: #a7acb9;
+  font-size: 0.82rem;
+}
+.account-heading > .button {
+  font-size: 0.75rem;
+}
+.account-read-notice {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  padding: 0.7rem 1rem;
+  background: #59c5df08;
+  border: 1px solid #59c5df1f;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  color: #a5d0dc;
+}
+.account-read-notice svg {
+  flex-shrink: 0;
+}
+.account-read-notice p {
+  margin: 0;
+  line-height: 1.7;
+}
+.account-address-panel {
+  padding: 1.5rem 0;
+}
+.account-address-panel label {
+  display: block;
+  font-size: 0.7rem;
+  color: #a8aebd;
+  margin-bottom: 0.6rem;
+}
+.account-address-panel form > div {
+  display: flex;
+  gap: 0.6rem;
+}
+.account-address-panel input,
+.account-address-panel select {
+  background: #181a20;
+  border: 1px solid #ffffff24;
+  border-radius: 7px;
+  padding: 0.8rem 0.9rem;
+  color: #d6dbe8;
+  min-width: 0;
+  flex: 1;
+  font:
+    0.72rem/1.5 "IBM Plex Mono",
+    monospace;
+}
+.account-address-panel .button {
+  font-size: 0.73rem;
+}
+.account-connect {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 0.7rem;
+}
+.account-connect > span {
+  color: #a0a7b9;
+  font-size: 0.69rem;
+}
+.account-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.2rem 0 1.3rem;
+}
+.account-toolbar > span {
+  color: #9da8bd;
+  font-size: 0.66rem;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+.account-toolbar code {
+  font-size: 0.63rem;
+}
+.account-toolbar > div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.account-toolbar label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #a9b2c3;
+  font-size: 0.66rem;
+}
+.account-toolbar input {
+  accent-color: var(--cx-accent);
+}
+.account-toolbar .button {
+  font-size: 0.68rem;
+  min-height: 38px;
+}
+.account-metrics {
+  display: grid;
+  grid-template-columns: 0.8fr 1.25fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.account-metrics > div {
+  background: linear-gradient(125deg, #20232e, #181a21);
+  border: 1px solid var(--cx-hairline);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+.account-metrics span,
+.account-balance span {
+  display: block;
+  font-size: 0.65rem;
+  color: #a7aebd;
+}
+.account-metrics strong {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  letter-spacing: -0.03em;
+}
+.account-metrics strong small {
+  font-size: 0.9rem;
+  color: #99a6bc;
+}
+.account-metrics strong.account-slot {
+  font:
+    0.85rem/1.6 "IBM Plex Mono",
+    monospace;
+  overflow-wrap: anywhere;
+}
+.account-metrics strong.account-partial {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.account-partial i {
+  height: 5px;
+  width: 5px;
+  background: #e6bd75;
+  border-radius: 100%;
+}
+.account-observed {
+  font-size: 0.65rem;
+  color: #a1aabd;
+  line-height: 1.7;
+  margin: 1rem 0 1.4rem;
+}
+.account-empty {
+  text-align: center;
+  border: 1px dashed #ffffff24;
+  border-radius: 12px;
+  padding: 3rem 1.5rem;
+  margin: 1.3rem 0;
+  background: #15171c;
+}
+.account-empty > svg {
+  color: #69b5cb;
+  margin: auto;
+}
+.account-empty h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  margin: 1rem 0;
+}
+.account-empty p {
+  max-width: 31rem;
+  margin: 0.7rem auto 1.5rem;
+  color: #a9b1c2;
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+.account-empty a {
+  font-size: 0.77rem;
+  color: #8bd9ed;
+}
+.account-detail-layout {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.65fr) minmax(0, 1.5fr);
+  gap: 1.1rem;
+  margin-top: 1.5rem;
+}
+.account-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.account-card {
+  text-align: left;
+  padding: 1.1rem;
+  border: 1px solid var(--cx-hairline);
+  border-radius: 11px;
+  background: #191b23;
+  color: var(--cx-text);
+  cursor: pointer;
+  min-width: 0;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+.account-card.selected {
+  border-color: #59c5df77;
+  background: linear-gradient(120deg, #59c5df13, #ff2d9508);
+}
+.account-card > span {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.4rem;
+  font:
+    0.57rem "IBM Plex Mono",
+    monospace;
+  color: #a4b4c8;
+  overflow-wrap: anywhere;
+}
+.account-card strong {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 1rem 0 0.5rem;
+  letter-spacing: -0.035em;
+  overflow-wrap: anywhere;
+}
+.account-card small {
+  display: block;
+  color: #b3b8c7;
+  font-size: 0.68rem;
+  line-height: 1.6;
+}
+.account-card em {
+  display: block;
+  font-size: 0.61rem;
+  color: #a9dae8;
+  line-height: 1.6;
+  margin-top: 0.7rem;
+  font-style: normal;
+}
+.account-detail {
+  border: 1px solid var(--cx-hairline);
+  background: #191b23;
+  border-radius: 12px;
+  padding: 1.5rem;
+  min-width: 0;
+  animation: account-reveal 0.18s ease-out;
+}
+.account-detail-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font:
+    0.6rem "IBM Plex Mono",
+    monospace;
+  color: #a4b4c8;
+}
+.account-status {
+  border: 1px solid #59c5df33;
+  color: #9dd7e4;
+  border-radius: 4px;
+  padding: 0.35rem 0.5rem;
+}
+.account-detail h2 {
+  font-size: 2.5rem;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 1.3rem 0;
+  overflow-wrap: anywhere;
+}
+.account-detail h2 small {
+  display: block;
+  font-size: 0.66rem;
+  color: #a6b0c4;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-top: 0.4rem;
+}
+.account-phase {
+  display: flex;
+  gap: 0.3rem;
+  margin: 1.4rem 0;
+}
+.account-phase span {
+  flex: 1;
+  text-align: center;
+  padding: 0.55rem 0.2rem;
+  border-top: 2px solid #ffffff19;
+  color: #a5aab7;
+  font-size: 0.6rem;
+}
+.account-phase span.current {
+  border-color: var(--cx-accent);
+  background: #59c5df0a;
+  color: #90daec;
+}
+.account-phase span.observed-before {
+  border-color: #48596f;
+}
+.account-balance {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1.2rem 0;
+  border-block: 1px solid var(--cx-hairline);
+}
+.account-balance strong {
+  display: block;
+  font-size: 1.45rem;
+  margin: 0.6rem 0;
+  letter-spacing: -0.035em;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+.account-balance strong.account-unavailable {
+  font-size: 0.95rem;
+  color: #afb7c9;
+}
+.account-balance small {
+  font-size: 0.6rem;
+  color: #9eaac0;
+  line-height: 1.6;
+  display: block;
+}
+.account-detail dl {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+  font-size: 0.7rem;
+}
+.account-detail dt {
+  color: #a5aebf;
+}
+.account-detail dd {
+  text-align: right;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.account-explorer {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+  color: #94d9e9;
+  border-top: 1px solid var(--cx-hairline);
+  padding-top: 1rem;
+}
+.account-explorer code {
+  font-size: 0.6rem;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+.account-explorer svg {
+  flex-shrink: 0;
+}
+.account-fine {
+  font-size: 0.6rem;
+  color: #a4aebf;
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+.account-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+  font-size: 0.65rem;
+  color: #a4aec1;
+}
+.account-pagination > div {
+  display: flex;
+  gap: 0.4rem;
+}
+.account-pagination button {
+  color: #cad4e8;
+  background: #1e222b;
+  border: 1px solid #ffffff1f;
+  border-radius: 5px;
+  padding: 0.6rem;
+  font-size: 0.66rem;
+  cursor: pointer;
+}
+.account-page button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.account-proof {
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--cx-hairline);
+  margin-top: 3.5rem;
+}
+.account-demo-read {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border: 1px solid var(--cx-hairline);
+  padding: 1.2rem;
+  border-radius: 10px;
+  background: #191b23;
+  margin: 1.5rem 0;
+}
+.account-demo-read p {
+  font-size: 0.7rem;
+  line-height: 1.7;
+  color: #aab4c7;
+  margin: 0.6rem 0;
+}
+.account-demo-read a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.66rem;
+  color: #8ed3e7;
+}
+.account-demo-read .button {
+  font-size: 0.7rem;
+  white-space: normal;
+  flex-shrink: 0;
+}
+.account-timeline {
+  list-style: none;
+  padding: 0;
+  margin: 2.5rem 0;
+}
+.account-timeline > li {
+  display: flex;
+  gap: 1.2rem;
+  position: relative;
+  padding: 0 0 2rem;
+}
+.account-timeline > li:before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 30px;
+  bottom: 0;
+  width: 1px;
+  background: #ffffff19;
+}
+.account-timeline > li:last-child:before {
+  display: none;
+}
+.account-timeline-dot {
+  width: 31px;
+  height: 31px;
+  flex-shrink: 0;
+  border: 1px solid #59c5df44;
+  background: #59c5df0c;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font:
+    0.6rem "IBM Plex Mono",
+    monospace;
+  color: #91d2e1;
+}
+.pending .account-timeline-dot {
+  border-color: #c6ad6a55;
+  color: #d7bd87;
+  background: #b3a06d0a;
+}
+.account-timeline-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.account-timeline-title h3 {
+  font-size: 0.9rem;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.account-timeline-title > span {
+  flex-shrink: 0;
+  font-size: 0.58rem;
+  color: #a2c3d4;
+  border: 1px solid #ffffff1a;
+  border-radius: 4px;
+  padding: 0.3rem 0.45rem;
+}
+.account-timeline li p {
+  font-size: 0.75rem;
+  color: #aab4c5;
+  line-height: 1.7;
+  margin: 0.6rem 0;
+}
+.account-timeline small {
+  color: #c6b589;
+  font-size: 0.65rem;
+  line-height: 1.6;
+}
+.account-proof-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.account-proof-links a {
+  font-size: 0.63rem;
+  color: #8fcedf;
+  padding: 0.35rem 0.5rem;
+  background: #59c5df08;
+  border: 1px solid #59c5df25;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.account-payout-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.account-payout-facts > div {
+  padding: 1.1rem;
+  border: 1px solid var(--cx-hairline);
+  border-radius: 9px;
+  min-width: 0;
+  background: #191b23;
+}
+.account-payout-facts span {
+  display: block;
+  font-size: 0.62rem;
+  color: #a6b2c4;
+  margin-bottom: 0.7rem;
+}
+.account-payout-facts strong {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #e6d0a0;
+  overflow-wrap: anywhere;
+}
+.account-provenance {
+  margin: 1.5rem 0;
+  color: #a4aec0;
+  font-size: 0.65rem;
+  line-height: 1.7;
+}
+.account-provenance summary {
+  cursor: pointer;
+  color: #c1cbdc;
+}
+.account-provenance code {
+  overflow-wrap: anywhere;
+  font-size: 0.6rem;
+}
+.account-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 1px solid var(--cx-hairline);
+  padding: 1.5rem 0 2.5rem;
+  margin-top: 2rem;
+  color: #9cabc3;
+  font-size: 0.62rem;
+  line-height: 1.6;
+}
+.account-loading {
+  padding: 0.8rem;
+  color: #9dd8e9;
+  font-size: 0.7rem;
+  background: #59c5df09;
+}
+.account-error {
+  padding: 0.9rem;
+  border: 1px solid #b7836555;
+  background: #b7836508;
+  border-radius: 7px;
+  color: #e3b69b;
+  font-size: 0.72rem;
+  line-height: 1.7;
+  margin: 0.8rem 0;
+  overflow-wrap: anywhere;
+}
+.account-mock {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  text-align: center;
+  background: #f3d76c;
+  color: #24200e;
+  padding: 0.6rem;
+  font:
+    bold 0.65rem/1.4 "IBM Plex Mono",
+    monospace;
+}
+@keyframes account-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 1100px) {
+  .account-workspace {
+    grid-template-columns: 190px minmax(0, 1fr);
+  }
+  .account-sidebar {
+    padding-inline: 0.7rem;
+  }
+  .account-top {
+    gap: 1.5rem;
+  }
+  .account-network {
+    font-size: 0.55rem;
+  }
+  .account-detail-layout {
+    grid-template-columns: 1fr;
+  }
+  .account-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .account-card strong {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 760px) {
+  .account-workspace {
+    grid-template-columns: 1fr;
+  }
+  .account-sidebar {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    border-right: 0;
+    border-bottom: 1px solid var(--cx-hairline);
+    flex-wrap: wrap;
+  }
+  .account-sidebar > .account-kicker {
+    display: none;
+  }
+  .account-sidebar > a {
+    font-size: 0.65rem;
+    margin: 0;
+    padding: 0.6rem;
+  }
+  .account-sidebar-note {
+    width: 100%;
+    margin: 0.6rem;
+    padding: 0.8rem 0 0.4rem;
+  }
+  .account-sidebar-note h3 {
+    display: none;
+  }
+  .account-sidebar-note > span {
+    display: none;
+  }
+  .account-sidebar-note p {
+    font-size: 0.67rem;
+    margin: 0;
+  }
+  .account-sidebar-note .button {
+    display: inline-flex;
+    margin: 0.7rem 0 0.3rem;
+    font-size: 0.65rem;
+  }
+  .account-sidebar-note small {
+    font-size: 0.6rem;
+  }
+  .account-top {
+    flex-wrap: wrap;
+    padding: 0.8rem 1.2rem;
+    gap: 1rem;
+  }
+  .account-top nav {
+    order: 3;
+    width: 100%;
+    gap: 1.2rem;
+    font-size: 0.7rem;
+  }
+  .account-network {
+    font-size: 0.5rem;
+  }
+  .account-top .brand img {
+    width: 54px;
+    height: 54px;
+  }
+  .account-content {
+    padding: 2rem 1.2rem 0;
+  }
+  .account-heading {
+    align-items: flex-start;
+  }
+  .account-heading > .button {
+    font-size: 0.65rem;
+    padding: 0.7rem;
+  }
+  .account-heading p:last-child {
+    font-size: 0.75rem;
+  }
+  .account-address-panel form > div {
+    flex-direction: column;
+  }
+  .account-metrics {
+    gap: 0.5rem;
+    grid-template-columns: 1fr;
+  }
+  .account-metrics > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .account-metrics strong {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+  .account-metrics strong.account-slot {
+    font-size: 0.7rem;
+  }
+  .account-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .account-toolbar > div {
+    justify-content: space-between;
+  }
+  .account-toolbar label {
+    font-size: 0.6rem;
+  }
+  .account-proof .account-heading {
+    flex-direction: column;
+  }
+  .account-demo-read {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .account-timeline-title {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .account-timeline-title h3 {
+    font-size: 0.85rem;
+  }
+  .account-payout-facts {
+    grid-template-columns: 1fr;
+  }
+  .account-footer {
+    flex-direction: column;
+  }
+  .account-pagination {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .account-pagination > div {
+    justify-content: space-between;
+  }
+  .account-detail {
+    padding: 1rem;
+  }
+  .account-detail h2 {
+    font-size: 2rem;
+  }
+  .account-balance {
+    grid-template-columns: 1fr;
+  }
+  .account-detail dl {
+    font-size: 0.65rem;
+  }
+  .account-cards {
+    gap: 0.6rem;
+  }
+  .account-card {
+    padding: 0.85rem;
+  }
+  .account-card > span {
+    font-size: 0.5rem;
+  }
+  .account-card strong {
+    font-size: 1.2rem;
+  }
+  .account-timeline > li {
+    gap: 0.8rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .account-page * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto;
+  }
+}
+.account-signed-wallet,
+.account-explorer-mode {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+.account-signed-wallet code {
+  overflow-wrap: anywhere;
+  font-size: 0.78rem;
+}
+.account-signed-wallet > span {
+  color: #aab0bd;
+  font-size: 0.8rem;
+}
+.wallet-signin-state h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  letter-spacing: -0.035em;
+}
+.wallet-signin-state p {
+  max-width: 42rem;
+  color: #aab0bd;
+  line-height: 1.6;
+}
+
+.account-archive > summary {
+  min-height: 48px;
+  padding: 16px 0;
+  color: #aab5c5;
+  cursor: pointer;
+}
+.account-archive > summary:focus-visible {
+  outline: 2px solid #65c7e2;
+  outline-offset: 4px;
+}

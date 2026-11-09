@@ -1,0 +1,20 @@
+{
+  "note": "Re-baselined 5 Nov 2026 after the accepted wallet-login, account-update, recorded-candle and proof-regeneration work legitimately changed these files since artifacts/p30-unsigned/frozen-files.json was taken. The original evidence file is untouched; the test still fails on any further change. src/pages/Dashboard.tsx re-pinned the same day after the demo journey added a \"Closed result vs account size\" row. On 6 Nov 2026 src/auth/wallet.ts, src/auth/session.ts, src/components/WalletDialog.tsx and src/components/ui.tsx were re-pinned after the reviewed landing/checkout work (injected-wallet purchase capability, restore/upgrade of a message-only session, checkout deep link after login, dialog focus restore); their prior pins were verified equal to the artifacts/landing-checkout-2026-11-06/before copies, and the changes were reviewed against the purchase path on the same day.",
+  "files": {
+    "src/auth/wallet.ts": "c2688e2131013516037895ddab538b9419ebe6b0e12c0c276326bc14bdde52a9",
+    "src/auth/session.ts": "fe4379210830d36899cef8d067452242f3aea2094eea66022d015276d511b2b4",
+    "src/auth/context.tsx": "3adda8512905adf3c33c15304f9e999d7de2e2826d7eb66e1cda46b7707add43",
+    "src/components/WalletDialog.tsx": "69f61f3dfa06f8dbf0c29d6a06db22ffe64ad35c2586ed822c9b78804deb625a",
+    "src/components/DemoPreview.tsx": "3ed3e1d7af13a1a9975944b6d134740ef533a72d27153beacd07aa9b496f484a",
+    "src/components/Workspace.tsx": "1c43ed4c5856ac73676bdbb5aa8f6a019aec45cf39b49f7b65719a111d0882a2",
+    "src/components/PreviewChart.tsx": "42e439de5065fed76f0099ca93441552044648dc7445ffd27f1230e46f26f0aa",
+    "src/components/MarketChart.tsx": "daf972c1d9b62cff4e81f0fdbffa47b6549b2b995f1a4580e384b51c0a46a3c1",
+    "src/components/RecordedChart.tsx": "5dbfef33de19a8ab570c3f79389e25b2be80d07077aa8d24876b203086e89ebf",
+    "src/api/client.ts": "b028fa4aff7f374d958642ef05110e321bc8f6a5cf6e6b769348339d8327735c",
+    "src/data/demo.ts": "6f54b4f6388658dde30f08ed1c7c03c712f9a0feff7f193bb633798dec57eca6",
+    "src/data/devnet-proof.json": "d3d9534979d4b1407116d1b74c93f697ef71453c1403663f121bcab57322240c",
+    "src/pages/Terminal.tsx": "ff169d572d3f04c0e82338a0d40f46e848d0962d84acb1705126603be2117917",
+    "src/pages/Dashboard.tsx": "a3a75250bb9ff1c4d5cf4dfc206cd9f59d21ead2b6c8a022ae758fd700933509",
+    "src/components/ui.tsx": "2853547a12b8f880b45c06f6098c5a2f8657384bbece7131764d2915489c6436"
+  }
+}

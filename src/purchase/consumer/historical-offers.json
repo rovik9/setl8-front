@@ -1,0 +1,31 @@
+{
+  "source": "/Users/rovik/Documents/setl8-back/.local/p30-acquisition/run-1793503578075041000/usdc-candidate.json",
+  "source_sha256": "a73f6f5bb58cd8efa0aa3cef5cc00e22d3cad299548fa8072d975ce467056bba",
+  "purpose": "illustrative_historical_examples_only",
+  "offers": [
+    {
+      "account_size_micro_usd": "2500000000",
+      "purchase_fee_atoms": "120000",
+      "purchase_fee_bps": "40",
+      "tier_index": "0",
+      "tier_price_atoms": "30000000",
+      "total_token_debit_atoms": "30120000"
+    },
+    {
+      "account_size_micro_usd": "5000000000",
+      "purchase_fee_atoms": "220000",
+      "purchase_fee_bps": "40",
+      "tier_index": "1",
+      "tier_price_atoms": "55000000",
+      "total_token_debit_atoms": "55220000"
+    },
+    {
+      "account_size_micro_usd": "10000000000",
+      "purchase_fee_atoms": "396000",
+      "purchase_fee_bps": "40",
+      "tier_index": "2",
+      "tier_price_atoms": "99000000",
+      "total_token_debit_atoms": "99396000"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "api_version": "1",
+  "settlement_history_version": "1",
+  "format": "setl8-devnet-public-rehearsal-settlement-history-v1",
+  "lane": "devnet",
+  "visibility": "public_rehearsal_example",
+  "example_id": "A1",
+  "account": "A3ncHBKQRrRNKVaeH9WuhMmwZ22BNoKyeCFsxK6ZwpvU",
+  "trader": "7urBRSkXz6jAoz7j4QnVjgWWVLUxV6nzjZxNEWhxkLeF",
+  "chain": {
+    "cluster": "devnet",
+    "genesis_hash": "EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG",
+    "lev_program": "HmkvQfgCMnihGzdZE1FTKVacZN76JS9bfEu2QBJBAdvY",
+    "vault_program": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z"
+  },
+  "transfer": {
+    "state": "finalized_token_transfer_verified",
+    "amount_atoms": "200000000",
+    "decimals": "6",
+    "display_symbol": "TEST_USDC",
+    "mint": "2kBKxj3TYz2UbQfVcJ5xBbWscC5hrALq7MLzJi3c1fTx",
+    "source_pool": "UjqJZRCALei1whzfLJbX3J5p22hRyYrVF7v3xNPiKPi",
+    "destination": "2VTVHhX2HobDML2L49oqSkkVS8RiL21c87TitsmLH7j2",
+    "vault_authority": "G7qpP8L2kXGP7VYuvhioEQLEuWxUngxDmxqxEqnpUCbT",
+    "recipient_balance_before_atoms": "99933736000",
+    "recipient_balance_after_atoms": "100133736000",
+    "balance_basis": "this_finalized_settlement_transaction_not_current_wallet_balance",
+    "instruction": "classic_spl_transfer_checked",
+    "outer_instruction_index": "1",
+    "stack_height": "2"
+  },
+  "claim": {
+    "address": "71ufTEdhUJ8j7HUuyKvLSFWgtxPiL55vX7GsjYuYjCpW",
+    "correlation": "referenced_in_finalize_and_settle_instruction_accounts",
+    "typed_claim_fields_verified": false,
+    "reported_status": "closed: paid in full",
+    "reported_status_is_not_independent_claim_decode": true
+  },
+  "receipts": [
+    {
+      "action": "finalize_pass",
+      "signature": "PhXjSTyGCZfQ8aceuDXwbiWsGBCppcXTGDz6iXnFB4p2aQCVsA7tEkb915dNARwnFM8Zf3CbhKpSrC6RMvpPLye",
+      "slot": "517852132",
+      "commitment": "finalized",
+      "transaction_error": null,
+      "packet_sha256": "36a665de486e9a60c1d8d8c18cda72444cd11f4bfbc4a51ddad7b6d158e4bc56",
+      "message_sha256": "f62fb7c5baf4ee4446fb19305096b71f394ee855790d0b12597952ed47d300e8",
+      "signature_verified": true,
+      "program": "HmkvQfgCMnihGzdZE1FTKVacZN76JS9bfEu2QBJBAdvY",
+      "anchor_discriminator_verified": true,
+      "source_response_sha256": [
+        "906442ee0a6427929fb8d3848e11963fa093fe190993a6842dbe64ad7f963fdc",
+        "906442ee0a6427929fb8d3848e11963fa093fe190993a6842dbe64ad7f963fdc"
+      ]
+    },
+    {
+      "action": "reconcile_product",
+      "signature": "5KNZD3DmGpiuJytqxxfQB5uo9czDVWV8Y3hPAi9SWnVbuqr8rcYS9GqiYfPcviCr2ejaxJJcCaVVHcgemF3M97JR",
+      "slot": "517852828",
+      "commitment": "finalized",
+      "transaction_error": null,
+      "packet_sha256": "c8ee57cfdc4b74c9a371c1315836c8b1a5428b75a4836af1e26f3d0ad6a37c1f",
+      "message_sha256": "c367e0b306eb4b6bedc4c0b6705acc4ebdd3c1558fe3613d5d6665a83b7ce667",
+      "signature_verified": true,
+      "program": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z",
+      "anchor_discriminator_verified": true,
+      "source_response_sha256": [
+        "f8a54701c1dc357391f37f6858d59e3ab6134e707820a3217e503366ba7499c8",
+        "f8a54701c1dc357391f37f6858d59e3ab6134e707820a3217e503366ba7499c8"
+      ]
+    },
+    {
+      "action": "begin_heartbeat",
+      "signature": "49D7EhWDwaWBnAHiw5vWVVFhJTMgCBQMeYh88LHMYQ8YPzSoRFrVT7wVLfApbDT5hZxe4n89r4QYYo7kXmC9UoP4",
+      "slot": "517852834",
+      "commitment": "finalized",
+      "transaction_error": null,
+      "packet_sha256": "ffb89e77bb2377330fa4ba7bd5a2fb6476cfcf97ceb5b154967f0b9bac07fc58",
+      "message_sha256": "20db824d5fb45cd6e06109b9fa6026c7515e2f55934b4f00ded9cf903dd76c68",
+      "signature_verified": true,
+      "program": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z",
+      "anchor_discriminator_verified": true,
+      "source_response_sha256": [
+        "f526ed0a6c9bcb743e3e7abe8e54efb70dc594e63a7e4e9b1a3b0f35ebab585f",
+        "f526ed0a6c9bcb743e3e7abe8e54efb70dc594e63a7e4e9b1a3b0f35ebab585f"
+      ]
+    },
+    {
+      "action": "settle_claims",
+      "signature": "5pJzbJEzCQF553XDF8gZbeY2zyxoHCrtMKFAPra8rSNQRNA5tNFpYAyj5Qbdwnw2gxshjbYWNQTso8B16dJaoPet",
+      "slot": "517852840",
+      "commitment": "finalized",
+      "transaction_error": null,
+      "packet_sha256": "b5b4e6c1bbfdf4bc2cb83f50558edaee85dd0ac3c866cca02ed09fc349a05295",
+      "message_sha256": "1fcdc074540c524334ec81d36cb3485c0974fddde377b8d8cb3fcb762b3092cc",
+      "signature_verified": true,
+      "program": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z",
+      "anchor_discriminator_verified": true,
+      "source_response_sha256": [
+        "34ad18058029c7d3260baf5ef8ddc77fd642de6e656dfd507b803d287b39d13c",
+        "34ad18058029c7d3260baf5ef8ddc77fd642de6e656dfd507b803d287b39d13c"
+      ]
+    },
+    {
+      "action": "finalize_heartbeat",
+      "signature": "3WydkoKuJ4xagSJbLz62JgRV7dfr9CxnQovrntJ8veuYEX4Yppg3ufcQHLJJ5FyfcpYjR9jut6aU1sHEbjZ2LKgh",
+      "slot": "517852906",
+      "commitment": "finalized",
+      "transaction_error": null,
+      "packet_sha256": "d8b938465f1ae7284739e73bf7cdc9ef81bed60c6a085709b951c816d3072b7d",
+      "message_sha256": "f5b42a817076d5a312255724cf4271948de0bacf26f4c311d28ea66ac7940f72",
+      "signature_verified": true,
+      "program": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z",
+      "anchor_discriminator_verified": true,
+      "source_response_sha256": [
+        "d2a8e86073c01e6867bc4b01885eb6c7dcc6f385efd703cf1e442b90fea745ca",
+        "d2a8e86073c01e6867bc4b01885eb6c7dcc6f385efd703cf1e442b90fea745ca"
+      ]
+    }
+  ],
+  "provenance": {
+    "operators": [
+      "solana_public_devnet",
+      "onfinality_public_devnet"
+    ],
+    "corroboration": "matching_finalized_slots_serialized_packets_and_transfer_metadata",
+    "infrastructure_independence": "not_established",
+    "public_manifest_sha256": "d6272ac2e7f84fcdb904490bf1c9935de117313f0771a56ceee86365363651fd",
+    "origin_review_sha256": "a9e223d35246ba00db34a29056f0260dbd1a135085dffd4650570a98bf3613cf",
+    "receipt_result_sha256": "a0a2dac9a04b1c430b5bbfd993b062de2f7107abbdafcb0e6b17cea905fa7566",
+    "raw_evidence_manifest_sha256": "47fe5b1d4e5bba2b16a9521da04c52632a5adcd22dc5732b50899d6d0c6fa8a5",
+    "receive_time_basis": "recorded_rpc_response_receive_time"
+  },
+  "limits": {
+    "history_coverage": "five_explicit_receipts_only",
+    "index_cursor": null,
+    "application_live_execution_proven": false,
+    "connected_owner_history": false,
+    "backend_submitted_transactions": "0",
+    "current_token_balance_proven": false,
+    "repeated_finalization_or_settlement_authorized": false
+  }
+}

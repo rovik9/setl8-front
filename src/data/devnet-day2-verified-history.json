@@ -1,0 +1,241 @@
+{
+  "format": "setl8-day2-finalized-token-history-v1",
+  "classification": "two_named_operator_finalized_token_transfer_verified",
+  "source_manifest_sha256": "d6272ac2e7f84fcdb904490bf1c9935de117313f0771a56ceee86365363651fd",
+  "review_sha256": "a9e223d35246ba00db34a29056f0260dbd1a135085dffd4650570a98bf3613cf",
+  "review_evidence_sha256": "a0a2dac9a04b1c430b5bbfd993b062de2f7107abbdafcb0e6b17cea905fa7566",
+  "network": "devnet",
+  "genesis_hash": "EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG",
+  "account": {
+    "name": "A1",
+    "address": "A3ncHBKQRrRNKVaeH9WuhMmwZ22BNoKyeCFsxK6ZwpvU",
+    "trader": "7urBRSkXz6jAoz7j4QnVjgWWVLUxV6nzjZxNEWhxkLeF",
+    "trader_token_account": "2VTVHhX2HobDML2L49oqSkkVS8RiL21c87TitsmLH7j2",
+    "mint": "2kBKxj3TYz2UbQfVcJ5xBbWscC5hrALq7MLzJi3c1fTx",
+    "decimals": "6"
+  },
+  "claim": "71ufTEdhUJ8j7HUuyKvLSFWgtxPiL55vX7GsjYuYjCpW",
+  "settlement": {
+    "source": "UjqJZRCALei1whzfLJbX3J5p22hRyYrVF7v3xNPiKPi",
+    "mint": "2kBKxj3TYz2UbQfVcJ5xBbWscC5hrALq7MLzJi3c1fTx",
+    "destination": "2VTVHhX2HobDML2L49oqSkkVS8RiL21c87TitsmLH7j2",
+    "authority": "G7qpP8L2kXGP7VYuvhioEQLEuWxUngxDmxqxEqnpUCbT",
+    "trader": "7urBRSkXz6jAoz7j4QnVjgWWVLUxV6nzjZxNEWhxkLeF",
+    "amount_micro_usdc": "200000000",
+    "before_micro_usdc": "99933736000",
+    "after_micro_usdc": "100133736000",
+    "outer_index": 1,
+    "stack_height": 2
+  },
+  "transactions": [
+    {
+      "action": "begin_heartbeat",
+      "signature": "49D7EhWDwaWBnAHiw5vWVVFhJTMgCBQMeYh88LHMYQ8YPzSoRFrVT7wVLfApbDT5hZxe4n89r4QYYo7kXmC9UoP4",
+      "slot": "517852834",
+      "packet_sha256": "ffb89e77bb2377330fa4ba7bd5a2fb6476cfcf97ceb5b154967f0b9bac07fc58",
+      "message_sha256": "20db824d5fb45cd6e06109b9fa6026c7515e2f55934b4f00ded9cf903dd76c68",
+      "signature_verified": true,
+      "program": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z",
+      "anchor_discriminator_verified": true,
+      "response_sha256": "f526ed0a6c9bcb743e3e7abe8e54efb70dc594e63a7e4e9b1a3b0f35ebab585f",
+      "observed_at_utc": "2026-11-02T12:49:20.361129+00:00"
+    },
+    {
+      "action": "finalize_heartbeat",
+      "signature": "3WydkoKuJ4xagSJbLz62JgRV7dfr9CxnQovrntJ8veuYEX4Yppg3ufcQHLJJ5FyfcpYjR9jut6aU1sHEbjZ2LKgh",
+      "slot": "517852906",
+      "packet_sha256": "d8b938465f1ae7284739e73bf7cdc9ef81bed60c6a085709b951c816d3072b7d",
+      "message_sha256": "f5b42a817076d5a312255724cf4271948de0bacf26f4c311d28ea66ac7940f72",
+      "signature_verified": true,
+      "program": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z",
+      "anchor_discriminator_verified": true,
+      "response_sha256": "d2a8e86073c01e6867bc4b01885eb6c7dcc6f385efd703cf1e442b90fea745ca",
+      "observed_at_utc": "2026-11-02T12:49:21.433310+00:00"
+    },
+    {
+      "action": "finalize_pass",
+      "signature": "PhXjSTyGCZfQ8aceuDXwbiWsGBCppcXTGDz6iXnFB4p2aQCVsA7tEkb915dNARwnFM8Zf3CbhKpSrC6RMvpPLye",
+      "slot": "517852132",
+      "packet_sha256": "36a665de486e9a60c1d8d8c18cda72444cd11f4bfbc4a51ddad7b6d158e4bc56",
+      "message_sha256": "f62fb7c5baf4ee4446fb19305096b71f394ee855790d0b12597952ed47d300e8",
+      "signature_verified": true,
+      "program": "HmkvQfgCMnihGzdZE1FTKVacZN76JS9bfEu2QBJBAdvY",
+      "anchor_discriminator_verified": true,
+      "response_sha256": "906442ee0a6427929fb8d3848e11963fa093fe190993a6842dbe64ad7f963fdc",
+      "observed_at_utc": "2026-11-02T12:49:22.489034+00:00"
+    },
+    {
+      "action": "reconcile_product",
+      "signature": "5KNZD3DmGpiuJytqxxfQB5uo9czDVWV8Y3hPAi9SWnVbuqr8rcYS9GqiYfPcviCr2ejaxJJcCaVVHcgemF3M97JR",
+      "slot": "517852828",
+      "packet_sha256": "c8ee57cfdc4b74c9a371c1315836c8b1a5428b75a4836af1e26f3d0ad6a37c1f",
+      "message_sha256": "c367e0b306eb4b6bedc4c0b6705acc4ebdd3c1558fe3613d5d6665a83b7ce667",
+      "signature_verified": true,
+      "program": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z",
+      "anchor_discriminator_verified": true,
+      "response_sha256": "f8a54701c1dc357391f37f6858d59e3ab6134e707820a3217e503366ba7499c8",
+      "observed_at_utc": "2026-11-02T12:49:23.535334+00:00"
+    },
+    {
+      "action": "settle_claims",
+      "signature": "5pJzbJEzCQF553XDF8gZbeY2zyxoHCrtMKFAPra8rSNQRNA5tNFpYAyj5Qbdwnw2gxshjbYWNQTso8B16dJaoPet",
+      "slot": "517852840",
+      "packet_sha256": "b5b4e6c1bbfdf4bc2cb83f50558edaee85dd0ac3c866cca02ed09fc349a05295",
+      "message_sha256": "1fcdc074540c524334ec81d36cb3485c0974fddde377b8d8cb3fcb762b3092cc",
+      "signature_verified": true,
+      "program": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z",
+      "anchor_discriminator_verified": true,
+      "response_sha256": "34ad18058029c7d3260baf5ef8ddc77fd642de6e656dfd507b803d287b39d13c",
+      "observed_at_utc": "2026-11-02T12:49:24.584157+00:00"
+    }
+  ],
+  "providers": {
+    "solana": {
+      "verified": true,
+      "genesis_response_sha256": "9d0f36530a5526131672857c8ff1d2b6dbcbab3e18f347161fc36b2c3a0825c3",
+      "statuses_response_sha256": "73c108d7746fc095a3a339bc583c594a04c8759d047cc2a2ef5402b9e32b210e",
+      "receipts": {
+        "begin_heartbeat": {
+          "action": "begin_heartbeat",
+          "signature": "49D7EhWDwaWBnAHiw5vWVVFhJTMgCBQMeYh88LHMYQ8YPzSoRFrVT7wVLfApbDT5hZxe4n89r4QYYo7kXmC9UoP4",
+          "slot": "517852834",
+          "packet_sha256": "ffb89e77bb2377330fa4ba7bd5a2fb6476cfcf97ceb5b154967f0b9bac07fc58",
+          "message_sha256": "20db824d5fb45cd6e06109b9fa6026c7515e2f55934b4f00ded9cf903dd76c68",
+          "signature_verified": true,
+          "program": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z",
+          "anchor_discriminator_verified": true,
+          "response_sha256": "f526ed0a6c9bcb743e3e7abe8e54efb70dc594e63a7e4e9b1a3b0f35ebab585f",
+          "observed_at_utc": "2026-11-02T12:49:20.361129+00:00"
+        },
+        "finalize_heartbeat": {
+          "action": "finalize_heartbeat",
+          "signature": "3WydkoKuJ4xagSJbLz62JgRV7dfr9CxnQovrntJ8veuYEX4Yppg3ufcQHLJJ5FyfcpYjR9jut6aU1sHEbjZ2LKgh",
+          "slot": "517852906",
+          "packet_sha256": "d8b938465f1ae7284739e73bf7cdc9ef81bed60c6a085709b951c816d3072b7d",
+          "message_sha256": "f5b42a817076d5a312255724cf4271948de0bacf26f4c311d28ea66ac7940f72",
+          "signature_verified": true,
+          "program": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z",
+          "anchor_discriminator_verified": true,
+          "response_sha256": "d2a8e86073c01e6867bc4b01885eb6c7dcc6f385efd703cf1e442b90fea745ca",
+          "observed_at_utc": "2026-11-02T12:49:21.433310+00:00"
+        },
+        "finalize_pass": {
+          "action": "finalize_pass",
+          "signature": "PhXjSTyGCZfQ8aceuDXwbiWsGBCppcXTGDz6iXnFB4p2aQCVsA7tEkb915dNARwnFM8Zf3CbhKpSrC6RMvpPLye",
+          "slot": "517852132",
+          "packet_sha256": "36a665de486e9a60c1d8d8c18cda72444cd11f4bfbc4a51ddad7b6d158e4bc56",
+          "message_sha256": "f62fb7c5baf4ee4446fb19305096b71f394ee855790d0b12597952ed47d300e8",
+          "signature_verified": true,
+          "program": "HmkvQfgCMnihGzdZE1FTKVacZN76JS9bfEu2QBJBAdvY",
+          "anchor_discriminator_verified": true,
+          "response_sha256": "906442ee0a6427929fb8d3848e11963fa093fe190993a6842dbe64ad7f963fdc",
+          "observed_at_utc": "2026-11-02T12:49:22.489034+00:00"
+        },
+        "reconcile_product": {
+          "action": "reconcile_product",
+          "signature": "5KNZD3DmGpiuJytqxxfQB5uo9czDVWV8Y3hPAi9SWnVbuqr8rcYS9GqiYfPcviCr2ejaxJJcCaVVHcgemF3M97JR",
+          "slot": "517852828",
+          "packet_sha256": "c8ee57cfdc4b74c9a371c1315836c8b1a5428b75a4836af1e26f3d0ad6a37c1f",
+          "message_sha256": "c367e0b306eb4b6bedc4c0b6705acc4ebdd3c1558fe3613d5d6665a83b7ce667",
+          "signature_verified": true,
+          "program": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z",
+          "anchor_discriminator_verified": true,
+          "response_sha256": "f8a54701c1dc357391f37f6858d59e3ab6134e707820a3217e503366ba7499c8",
+          "observed_at_utc": "2026-11-02T12:49:23.535334+00:00"
+        },
+        "settle_claims": {
+          "action": "settle_claims",
+          "signature": "5pJzbJEzCQF553XDF8gZbeY2zyxoHCrtMKFAPra8rSNQRNA5tNFpYAyj5Qbdwnw2gxshjbYWNQTso8B16dJaoPet",
+          "slot": "517852840",
+          "packet_sha256": "b5b4e6c1bbfdf4bc2cb83f50558edaee85dd0ac3c866cca02ed09fc349a05295",
+          "message_sha256": "1fcdc074540c524334ec81d36cb3485c0974fddde377b8d8cb3fcb762b3092cc",
+          "signature_verified": true,
+          "program": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z",
+          "anchor_discriminator_verified": true,
+          "response_sha256": "34ad18058029c7d3260baf5ef8ddc77fd642de6e656dfd507b803d287b39d13c",
+          "observed_at_utc": "2026-11-02T12:49:24.584157+00:00"
+        }
+      }
+    },
+    "onfinality": {
+      "verified": true,
+      "genesis_response_sha256": "9d0f36530a5526131672857c8ff1d2b6dbcbab3e18f347161fc36b2c3a0825c3",
+      "statuses_response_sha256": "3baae8f4237a87b9d7f0ced4850dea5f950bb698738afcb57776f25aa0c93c53",
+      "receipts": {
+        "begin_heartbeat": {
+          "action": "begin_heartbeat",
+          "signature": "49D7EhWDwaWBnAHiw5vWVVFhJTMgCBQMeYh88LHMYQ8YPzSoRFrVT7wVLfApbDT5hZxe4n89r4QYYo7kXmC9UoP4",
+          "slot": "517852834",
+          "packet_sha256": "ffb89e77bb2377330fa4ba7bd5a2fb6476cfcf97ceb5b154967f0b9bac07fc58",
+          "message_sha256": "20db824d5fb45cd6e06109b9fa6026c7515e2f55934b4f00ded9cf903dd76c68",
+          "signature_verified": true,
+          "program": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z",
+          "anchor_discriminator_verified": true,
+          "response_sha256": "f526ed0a6c9bcb743e3e7abe8e54efb70dc594e63a7e4e9b1a3b0f35ebab585f",
+          "observed_at_utc": "2026-11-02T12:51:53.912203+00:00"
+        },
+        "finalize_heartbeat": {
+          "action": "finalize_heartbeat",
+          "signature": "3WydkoKuJ4xagSJbLz62JgRV7dfr9CxnQovrntJ8veuYEX4Yppg3ufcQHLJJ5FyfcpYjR9jut6aU1sHEbjZ2LKgh",
+          "slot": "517852906",
+          "packet_sha256": "d8b938465f1ae7284739e73bf7cdc9ef81bed60c6a085709b951c816d3072b7d",
+          "message_sha256": "f5b42a817076d5a312255724cf4271948de0bacf26f4c311d28ea66ac7940f72",
+          "signature_verified": true,
+          "program": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z",
+          "anchor_discriminator_verified": true,
+          "response_sha256": "d2a8e86073c01e6867bc4b01885eb6c7dcc6f385efd703cf1e442b90fea745ca",
+          "observed_at_utc": "2026-11-02T12:51:55.206125+00:00"
+        },
+        "finalize_pass": {
+          "action": "finalize_pass",
+          "signature": "PhXjSTyGCZfQ8aceuDXwbiWsGBCppcXTGDz6iXnFB4p2aQCVsA7tEkb915dNARwnFM8Zf3CbhKpSrC6RMvpPLye",
+          "slot": "517852132",
+          "packet_sha256": "36a665de486e9a60c1d8d8c18cda72444cd11f4bfbc4a51ddad7b6d158e4bc56",
+          "message_sha256": "f62fb7c5baf4ee4446fb19305096b71f394ee855790d0b12597952ed47d300e8",
+          "signature_verified": true,
+          "program": "HmkvQfgCMnihGzdZE1FTKVacZN76JS9bfEu2QBJBAdvY",
+          "anchor_discriminator_verified": true,
+          "response_sha256": "906442ee0a6427929fb8d3848e11963fa093fe190993a6842dbe64ad7f963fdc",
+          "observed_at_utc": "2026-11-02T12:51:56.493215+00:00"
+        },
+        "reconcile_product": {
+          "action": "reconcile_product",
+          "signature": "5KNZD3DmGpiuJytqxxfQB5uo9czDVWV8Y3hPAi9SWnVbuqr8rcYS9GqiYfPcviCr2ejaxJJcCaVVHcgemF3M97JR",
+          "slot": "517852828",
+          "packet_sha256": "c8ee57cfdc4b74c9a371c1315836c8b1a5428b75a4836af1e26f3d0ad6a37c1f",
+          "message_sha256": "c367e0b306eb4b6bedc4c0b6705acc4ebdd3c1558fe3613d5d6665a83b7ce667",
+          "signature_verified": true,
+          "program": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z",
+          "anchor_discriminator_verified": true,
+          "response_sha256": "f8a54701c1dc357391f37f6858d59e3ab6134e707820a3217e503366ba7499c8",
+          "observed_at_utc": "2026-11-02T12:51:57.763808+00:00"
+        },
+        "settle_claims": {
+          "action": "settle_claims",
+          "signature": "5pJzbJEzCQF553XDF8gZbeY2zyxoHCrtMKFAPra8rSNQRNA5tNFpYAyj5Qbdwnw2gxshjbYWNQTso8B16dJaoPet",
+          "slot": "517852840",
+          "packet_sha256": "b5b4e6c1bbfdf4bc2cb83f50558edaee85dd0ac3c866cca02ed09fc349a05295",
+          "message_sha256": "1fcdc074540c524334ec81d36cb3485c0974fddde377b8d8cb3fcb762b3092cc",
+          "signature_verified": true,
+          "program": "qmeDsSeK7eFSU8aNoqLFJxZstoMA3EgMrcsuMFjsF2Z",
+          "anchor_discriminator_verified": true,
+          "response_sha256": "34ad18058029c7d3260baf5ef8ddc77fd642de6e656dfd507b803d287b39d13c",
+          "observed_at_utc": "2026-11-02T12:51:59.049237+00:00"
+        }
+      }
+    }
+  },
+  "corroborated": true,
+  "offline_verified": true,
+  "typed_full_claim_consumer_verified": false,
+  "app_connected_execution_verified": false,
+  "can_transact": false,
+  "frontend_rpc_calls": 0,
+  "chain_actions": 0,
+  "limits": [
+    "A1rehearsaltrader, not J95ownerwallet",
+    "Historical actualsettlement doesnotproveappliveexecutionready",
+    "Full typedclaim/event correlation remainsSDKcandidateconsumerreview",
+    "Two namedRPCoperators notinfrastructureindependenceattestation"
+  ]
+}

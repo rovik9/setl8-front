@@ -1,0 +1,456 @@
+.devnet-journey {
+  margin: 30px 0;
+  padding: 26px;
+  border: 1px solid #2d333e;
+  border-radius: 12px;
+  background: #14171d;
+}
+.devnet-journey h2 {
+  font-size: 28px;
+  letter-spacing: -0.045em;
+  margin: 8px 0;
+}
+.devnet-journey-intro {
+  color: #9da9b9;
+  font-size: 13px;
+  line-height: 1.7;
+  max-width: 850px;
+  margin: 16px 0 24px;
+}
+.devnet-step-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.devnet-step-grid article {
+  padding: 20px;
+  background: #181c24;
+  border: 1px solid #2a313d;
+  border-radius: 9px;
+  min-width: 0;
+}
+.devnet-step-number {
+  color: #63bdd5;
+  font-size: 11px;
+}
+.devnet-step-grid h3 {
+  font-size: 16px;
+  margin: 12px 0;
+}
+.devnet-step-grid strong {
+  display: block;
+  font-size: 12px;
+  color: #b9cbdb;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.devnet-step-grid p {
+  color: #929daf;
+  font-size: 12px;
+  line-height: 1.65;
+}
+.devnet-journey-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin: 24px 0;
+}
+.devnet-history main {
+  padding-top: 44px;
+  padding-bottom: 60px;
+  max-width: 1160px;
+}
+.devnet-history-heading {
+  margin-bottom: 30px;
+  max-width: 800px;
+}
+.devnet-history-heading h1 {
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+  margin: 18px 0;
+}
+.devnet-history-heading p,
+.devnet-history .panel > p {
+  font-size: 13px;
+  color: #a3abba;
+  line-height: 1.7;
+}
+.devnet-history .notice {
+  line-height: 1.7;
+  font-size: 13px;
+  margin-bottom: 26px;
+}
+.devnet-history .panel {
+  padding: 28px;
+  margin: 22px 0;
+  border: 1px solid #2d333d;
+  border-radius: 12px;
+}
+.devnet-history .panel h2 {
+  font-size: 24px;
+  letter-spacing: -0.035em;
+  margin-bottom: 20px;
+}
+.devnet-history .definition-list dd {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.devnet-history .definition-list dd a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.devnet-history .definition-list code {
+  font-size: 11px;
+  word-break: break-all;
+}
+.devnet-reported-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin: 22px 0;
+}
+.devnet-reported-metrics span {
+  display: block;
+  color: #909aaa;
+  font-size: 11px;
+  margin-bottom: 12px;
+}
+.devnet-reported-metrics strong {
+  font-size: 25px;
+  letter-spacing: -0.045em;
+}
+.devnet-history-transactions article {
+  padding: 18px 0;
+  border-top: 1px solid #2b3039;
+}
+.devnet-history-transactions article > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.devnet-history-transactions article > a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #7dc7dc;
+}
+.devnet-history-transactions code {
+  overflow-wrap: anywhere;
+  word-break: break-all;
+  font-size: 11px;
+}
+@media (max-width: 760px) {
+  .devnet-journey {
+    padding: 20px 16px;
+  }
+  .devnet-journey .section-top {
+    align-items: start;
+    flex-direction: column;
+  }
+  .devnet-journey h2 {
+    font-size: 25px;
+  }
+  .devnet-step-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .devnet-step-grid article {
+    padding: 16px 12px;
+  }
+  .devnet-step-grid h3 {
+    font-size: 14px;
+  }
+  .devnet-step-grid strong,
+  .devnet-step-grid p {
+    font-size: 11px;
+  }
+  .devnet-history main {
+    padding-top: 28px;
+  }
+  .devnet-history .site-header {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .devnet-history .site-header > a {
+    font-size: 12px;
+  }
+  .devnet-history .site-header .wallet-button {
+    font-size: 11px;
+  }
+  .devnet-history .panel {
+    padding: 22px 16px;
+  }
+  .devnet-history .definition-list > div {
+    display: block;
+  }
+  .devnet-history .definition-list dd {
+    margin: 8px 0 14px;
+  }
+  .devnet-reported-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .devnet-reported-metrics strong {
+    font-size: 23px;
+  }
+  .devnet-history-transactions article > div {
+    flex-wrap: wrap;
+  }
+  .devnet-history .section-top {
+    align-items: start;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+}
+
+.devnet-terminal main {
+  padding-top: 36px;
+  padding-bottom: 60px;
+}
+.devnet-terminal-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  gap: 24px;
+  margin: 24px 0;
+}
+.devnet-terminal-layout .panel {
+  padding: 24px;
+  min-width: 0;
+  background: #15181f;
+  border: 1px solid #2d333e;
+  border-radius: 10px;
+}
+.devnet-terminal-layout h2 {
+  font-size: 24px;
+  letter-spacing: -0.04em;
+  margin-bottom: 22px;
+}
+.devnet-terminal-layout .order-draft-ticket {
+  display: grid;
+  gap: 18px;
+  align-content: start;
+}
+.devnet-terminal-layout input {
+  max-width: 100%;
+}
+.devnet-terminal-layout .definition-list dd {
+  overflow-wrap: anywhere;
+}
+.devnet-terminal .notice {
+  margin: 20px 0;
+  font-size: 13px;
+  line-height: 1.7;
+}
+@media (max-width: 760px) {
+  .devnet-terminal-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .devnet-terminal .site-header {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .devnet-terminal .site-header > a {
+    font-size: 12px;
+  }
+  .devnet-terminal .wallet-button {
+    font-size: 11px;
+  }
+  .devnet-terminal-layout .panel {
+    padding: 20px 16px;
+  }
+}
+
+.devnet-recovery-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-block: 16px;
+}
+.devnet-recovery-actions button {
+  max-width: 100%;
+  white-space: normal;
+}
+
+.devnet-terminal > main > .panel,
+.devnet-source-ages {
+  padding: 24px;
+  margin-block: 24px;
+  border: 1px solid #2d333e;
+  border-radius: 10px;
+  background: #15181f;
+}
+.devnet-terminal > main > .panel h2,
+.devnet-source-ages h2 {
+  font-size: 24px;
+  letter-spacing: -0.04em;
+  margin-bottom: 18px;
+}
+.devnet-terminal > main > .panel > p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #a3abba;
+  margin-block: 16px;
+}
+.devnet-source-ages .definition-list dd {
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+@media (max-width: 760px) {
+  .devnet-terminal > main > .panel,
+  .devnet-source-ages {
+    padding: 20px 16px;
+  }
+  .devnet-source-ages .definition-list > div {
+    display: block;
+  }
+  .devnet-source-ages .definition-list dd {
+    text-align: left;
+    margin-block: 8px;
+  }
+}
+
+.devnet-history .payout-summary > .payout-amount {
+  font-size: clamp(38px, 5vw, 64px);
+  font-weight: 650;
+  letter-spacing: -0.045em;
+  line-height: 1.2;
+  margin-block: 24px;
+  color: #f4f7fa;
+}
+.payout-amount span {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 16px;
+  color: #9da9b9;
+  white-space: nowrap;
+  letter-spacing: 0;
+}
+.payout-summary .button {
+  margin-top: 22px;
+}
+.payout-timeline {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.payout-timeline li {
+  display: flex;
+  gap: 14px;
+  min-width: 0;
+}
+.payout-timeline-mark {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #307183;
+  border-radius: 50%;
+  color: #70cadf;
+  background: #13272e;
+}
+.payout-timeline h3 {
+  font-size: 18px;
+  margin: 4px 0 10px;
+}
+.payout-timeline p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #a3abba;
+  margin-bottom: 14px;
+}
+.payout-timeline a {
+  font-size: 12px;
+  color: #7dc7dc;
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+.payout-balances {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.payout-verification summary {
+  font-size: 16px;
+  cursor: pointer;
+  color: #c6d0db;
+}
+.payout-verification > div {
+  margin-top: 24px;
+}
+.payout-verification > div > p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #a3abba;
+  margin-block: 20px;
+}
+.devnet-source-ages > details {
+  margin-block: 20px;
+}
+.devnet-source-ages > details > summary {
+  cursor: pointer;
+  font-size: 13px;
+  color: #b2bfce;
+}
+@media (max-width: 760px) {
+  .payout-timeline,
+  .payout-balances {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .payout-balances strong {
+    font-size: 24px;
+  }
+  .payout-timeline {
+    gap: 28px;
+  }
+}
+
+.devnet-pipeline {
+  padding: 24px;
+  margin-block: 24px;
+  min-width: 0;
+}
+.devnet-pipeline h2 {
+  font-size: 24px;
+  letter-spacing: -0.04em;
+  margin-bottom: 18px;
+}
+.devnet-pipeline > p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #a3abba;
+  margin-block: 14px;
+}
+.devnet-pipeline details {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 760px) {
+  .devnet-pipeline {
+    padding: 20px 16px;
+  }
+}
+.devnet-step-evidence {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #2a313d;
+  font-size: 12px;
+  min-width: 0;
+}
+.devnet-step-evidence dl {
+  margin: 0 0 10px;
+}
+.devnet-step-evidence dt {
+  color: #929daf;
+  margin-top: 8px;
+}
+.devnet-step-evidence dd {
+  margin: 2px 0 0;
+  color: #d3dde8;
+  font-family: ui-monospace, monospace;
+  overflow-wrap: anywhere;
+}

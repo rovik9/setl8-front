@@ -1,0 +1,637 @@
+.practice-workspace .workspace-body {
+  min-width: 0;
+  flex: 1;
+}
+.practice-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 28px;
+  border-bottom: 1px solid var(--line, #292c33);
+  gap: 16px;
+}
+.practice-header > div {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: #aaaeb9;
+}
+.practice-main {
+  padding: 24px 30px;
+  max-width: 1800px;
+  margin: auto;
+}
+.practice-lane-notice {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #78c7d9;
+  background: #142028;
+  border: 1px solid #253a44;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 24px;
+  font-size: 12px;
+}
+.practice-heading,
+.practice-account-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+.practice-heading h1 {
+  font-size: clamp(28px, 3vw, 44px);
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+  margin: 8px 0 12px;
+}
+.practice-heading p {
+  color: #a6a9b3;
+}
+.practice-heading code {
+  color: #d1d6e1;
+}
+.practice-sidebar-bottom {
+  margin-top: auto;
+  padding: 28px 20px;
+  font-size: 12px;
+  display: grid;
+  gap: 16px;
+}
+.practice-sidebar-bottom p {
+  line-height: 1.6;
+  color: #8d919d;
+}
+.practice-workspace .app-sidebar {
+  display: flex;
+  flex-direction: column;
+}
+.practice-workspace .app-sidebar > nav {
+  display: grid;
+  padding: 16px;
+  gap: 8px;
+}
+.practice-workspace .app-sidebar > nav a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 8px;
+  color: #a4abb9;
+}
+.practice-workspace .app-sidebar > nav a.active {
+  color: #6bc9e3;
+  background: #10232a;
+}
+.practice-account-select {
+  display: flex;
+  gap: 14px;
+  align-items: end;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.practice-account-select label,
+.practice-payout-form label {
+  display: grid;
+  gap: 8px;
+  color: #aeb5c3;
+  font-size: 12px;
+}
+.practice-account-select select {
+  min-width: 300px;
+  max-width: 100%;
+  background: #181a20;
+  color: #e6e9ee;
+  border: 1px solid #303641;
+  padding: 12px;
+  border-radius: 7px;
+}
+.practice-account-select > span {
+  font-size: 12px;
+  color: #969dab;
+  align-self: center;
+}
+.practice-worker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: #b6bfca;
+  margin: 22px 0;
+}
+.practice-worker strong {
+  color: #dfe5eb;
+}
+.practice-metrics {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  border: 1px solid #282c34;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.practice-metrics > div {
+  padding: 18px;
+  border-right: 1px solid #282c34;
+  min-width: 0;
+  background: #14161b;
+}
+.practice-metrics > div:last-child {
+  border: 0;
+}
+.practice-metrics span {
+  display: block;
+  color: #9199a8;
+  font-size: 11px;
+  margin-bottom: 9px;
+}
+.practice-metrics strong {
+  font-size: 22px;
+  letter-spacing: -0.04em;
+  overflow-wrap: anywhere;
+}
+.practice-overview-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 24px;
+  margin: 24px 0;
+}
+.practice-overview-chart,
+.practice-terminal-chart {
+  min-width: 0;
+  border: 1px solid #292c33;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #101113;
+}
+.practice-next {
+  padding: 26px;
+  border: 1px solid #292c33;
+  border-radius: 10px;
+  background: #17191f;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.practice-next h2 {
+  font-size: 30px;
+  letter-spacing: -0.04em;
+}
+.practice-next p {
+  color: #a9aeb8;
+  line-height: 1.65;
+  font-size: 13px;
+}
+.practice-chart .chart-toolbar {
+  padding: 10px 14px;
+  gap: 12px;
+}
+.practice-chart .chart-toolbar > span {
+  font-size: 11px;
+  color: #909aab;
+}
+.practice-chart .chart-toolbar .button {
+  font-size: 11px;
+  padding: 8px;
+}
+.practice-quote {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 18px 20px;
+}
+.practice-quote > strong {
+  font-size: 30px;
+  letter-spacing: -0.04em;
+}
+.practice-quote > span {
+  font-size: 10px;
+  color: #a8b0be;
+  overflow-wrap: anywhere;
+}
+.practice-chart-canvas {
+  height: 330px;
+  position: relative;
+}
+.practice-chart-canvas .market-chart {
+  height: 100%;
+  width: 100%;
+}
+.practice-chart-empty {
+  position: absolute;
+  left: 20px;
+  top: 70px;
+  color: #929aaa;
+  font-size: 13px;
+  pointer-events: none;
+}
+.practice-chart .chart-bottomline {
+  padding: 10px 18px;
+  font-size: 10px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.practice-provenance {
+  padding: 14px 20px;
+  font-size: 12px;
+  color: #9ea8b8;
+}
+.practice-provenance p {
+  line-height: 1.7;
+  margin: 12px 0;
+}
+.practice-terminal-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 310px;
+  grid-template-rows: auto auto;
+  gap: 16px;
+  align-items: start;
+}
+.practice-terminal-chart {
+  grid-column: 1;
+  grid-row: 1;
+}
+.practice-terminal-ticket {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  border: 1px solid #2b3039;
+  border-radius: 10px;
+  max-height: none;
+  overflow: visible;
+}
+.practice-terminal-lower {
+  grid-column: 1;
+  grid-row: 2;
+  border: 1px solid #2b3039;
+  border-radius: 10px;
+  overflow: hidden;
+  min-width: 0;
+}
+.practice-ticket {
+  padding: 18px;
+}
+.practice-ticket .order-type {
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.practice-ticket .order-type button {
+  padding: 8px;
+  font-size: 11px;
+  flex: 1;
+}
+.practice-ticket input {
+  max-width: 100%;
+}
+.practice-ticket .draft-review,
+.practice-recovery {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #30333c;
+}
+.practice-ticket .notice {
+  overflow-wrap: anywhere;
+  font-size: 12px;
+}
+.practice-recovery .button {
+  white-space: normal;
+  text-align: left;
+}
+.practice-history {
+  padding: 20px;
+}
+.practice-history > h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+.practice-history > p,
+.practice-mark-basis {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #929cae;
+  margin-bottom: 16px;
+}
+.practice-workspace .table-scroll {
+  padding: 14px;
+}
+.practice-workspace table {
+  width: 100%;
+  white-space: nowrap;
+}
+.practice-workspace th,
+.practice-workspace td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #262b33;
+  font-size: 12px;
+  text-align: left;
+}
+.practice-pending-row {
+  padding: 16px;
+  border-bottom: 1px solid #292c33;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.practice-footer {
+  padding: 24px 30px;
+  border-top: 1px solid #292c33;
+  color: #7e899b;
+  font-size: 11px;
+  line-height: 1.8;
+}
+.practice-footer a {
+  color: #8bcbdc;
+  margin-left: 10px;
+}
+.practice-payout-form {
+  display: flex;
+  align-items: end;
+  gap: 18px;
+  margin: 28px 0;
+  flex-wrap: wrap;
+}
+.practice-payout-form input {
+  padding: 12px;
+  background: #1a1d24;
+  border: 1px solid #303641;
+  border-radius: 6px;
+  color: #ecedf2;
+}
+.practice-payout-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.practice-payout-list article {
+  padding: 24px;
+  border: 1px solid #2c313b;
+  border-radius: 10px;
+  background: #16191f;
+}
+.practice-payout-list article > p {
+  font-size: 12px;
+  color: #929bab;
+  margin: 16px 0;
+}
+.practice-entry-card {
+  margin: 22px 0;
+  padding: 22px 24px;
+  background: #142229;
+  border: 1px solid #29434e;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.practice-entry-card p {
+  font-size: 12px;
+  color: #a5b2bd;
+  line-height: 1.65;
+  margin-top: 8px;
+}
+.practice-entry-card h2 {
+  font-size: 22px;
+  letter-spacing: -0.03em;
+}
+.practice-entry-card .button {
+  flex-shrink: 0;
+}
+.practice-main .mobile-workspace-tabs {
+  display: none;
+}
+.practice-ticket .draft-label {
+  margin-top: 10px;
+}
+.practice-terminal-lower .empty-state {
+  padding: 28px 20px;
+}
+@media (max-width: 1100px) {
+  .practice-workspace .app-sidebar {
+    width: 190px;
+  }
+  .practice-main {
+    padding: 22px 20px;
+  }
+  .practice-metrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .practice-overview-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .practice-next {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  .practice-next p,
+  .practice-next h2 {
+    grid-column: 1;
+  }
+  .practice-next .button {
+    grid-column: 2;
+  }
+  .practice-terminal-grid {
+    grid-template-columns: minmax(0, 1fr) 280px;
+  }
+  .practice-metrics strong {
+    font-size: 19px;
+  }
+}
+@media (max-width: 760px) {
+  .practice-workspace {
+    display: block;
+  }
+  .practice-workspace .app-sidebar {
+    width: 100%;
+    position: static;
+    border-right: 0;
+    border-bottom: 1px solid #292c33;
+    padding: 12px 16px;
+  }
+  .practice-workspace .app-sidebar > .brand {
+    display: none;
+  }
+  .practice-workspace .sidebar-caption,
+  .practice-sidebar-bottom {
+    display: none;
+  }
+  .practice-workspace .app-sidebar > nav {
+    display: flex;
+    gap: 6px;
+    padding: 0;
+    justify-content: space-between;
+  }
+  .practice-workspace .app-sidebar > nav a {
+    font-size: 11px;
+    padding: 10px 8px;
+    gap: 6px;
+  }
+  .practice-workspace .app-sidebar > nav a svg {
+    width: 15px;
+  }
+  .practice-header {
+    padding: 16px;
+  }
+  .practice-header > div {
+    gap: 8px;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  .practice-header .wallet-button {
+    font-size: 11px;
+    padding: 12px;
+  }
+  .practice-main {
+    padding: 20px 14px;
+  }
+  .practice-lane-notice {
+    font-size: 11px;
+    line-height: 1.5;
+    padding: 12px;
+  }
+  .practice-heading {
+    align-items: start;
+  }
+  .practice-heading h1 {
+    font-size: 29px;
+  }
+  .practice-heading p {
+    font-size: 11px;
+    overflow-wrap: anywhere;
+  }
+  .practice-account-select {
+    align-items: stretch;
+  }
+  .practice-account-select label {
+    width: 100%;
+  }
+  .practice-account-select select {
+    width: 100%;
+    min-width: 0;
+  }
+  .practice-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .practice-metrics > div {
+    padding: 14px;
+  }
+  .practice-metrics strong {
+    font-size: 20px;
+  }
+  .practice-next {
+    display: flex;
+    padding: 20px;
+  }
+  .practice-main .mobile-workspace-tabs {
+    display: flex;
+    margin: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    background: #111318;
+  }
+  .practice-terminal-grid {
+    display: block;
+  }
+  .practice-terminal-grid[data-mobile-tab="chart"] .practice-terminal-ticket,
+  .practice-terminal-grid[data-mobile-tab="chart"] .practice-terminal-lower,
+  .practice-terminal-grid[data-mobile-tab="ticket"] .practice-terminal-chart,
+  .practice-terminal-grid[data-mobile-tab="ticket"] .practice-terminal-lower,
+  .practice-terminal-grid[data-mobile-tab="account"] .practice-terminal-chart,
+  .practice-terminal-grid[data-mobile-tab="account"] .practice-terminal-ticket {
+    display: none;
+  }
+  .practice-chart .chart-toolbar {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .practice-chart .toolbar-spacer {
+    display: none;
+  }
+  .practice-chart .chart-toolbar .button {
+    font-size: 10px;
+  }
+  .practice-chart-canvas {
+    height: 290px;
+  }
+  .practice-quote {
+    padding: 16px;
+  }
+  .practice-quote > span {
+    font-size: 9px;
+  }
+  .practice-payout-list {
+    grid-template-columns: 1fr;
+  }
+  .practice-entry-card {
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+  }
+  .practice-worker {
+    font-size: 10px;
+    gap: 8px;
+  }
+  .practice-footer {
+    padding: 18px 16px;
+  }
+  .practice-payout-list .definition-list > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .practice-payout-list .definition-list dd {
+    overflow-wrap: anywhere;
+    max-width: 65%;
+    text-align: right;
+  }
+}
+
+.practice-hero-link {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto 18px;
+  color: #8bcbdc;
+  font-size: 12px;
+}
+.practice-entry-card {
+  margin: 22px 0;
+  padding: 22px 24px;
+  background: #142229;
+  border: 1px solid #29434e;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.practice-entry-card p {
+  font-size: 12px;
+  color: #a5b2bd;
+  line-height: 1.65;
+  margin-top: 8px;
+}
+.practice-entry-card h2 {
+  font-size: 22px;
+  letter-spacing: -0.03em;
+}
+.practice-entry-card .button {
+  flex-shrink: 0;
+}
+@media (max-width: 760px) {
+  .practice-entry-card {
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+  }
+}

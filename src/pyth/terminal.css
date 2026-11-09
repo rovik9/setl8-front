@@ -1,0 +1,204 @@
+.terminal-entry {
+  min-width: 0;
+}
+.terminal-view-switch {
+  display: flex;
+  gap: 8px;
+  padding: 10px 16px;
+  border-bottom: 1px solid #2a303a;
+  background: #0c0f13;
+}
+.terminal-view-switch button {
+  min-height: 44px;
+  border: 1px solid #343c48;
+  border-radius: 8px;
+  padding: 8px 15px;
+  color: #a8b4c4;
+  background: #11151b;
+}
+.terminal-view-switch button[aria-pressed="true"] {
+  color: #9edcef;
+  background: #007ba71f;
+  border-color: #2588aa;
+}
+.terminal-simulation-label {
+  margin: 0;
+  padding: 9px 16px;
+  background: #332319;
+  color: #e9c3a0;
+  font-size: 0.8rem;
+}
+.pyth-panel {
+  padding: 24px;
+  max-width: 1500px;
+  margin: auto;
+  min-width: 0;
+}
+.pyth-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.pyth-heading h1 {
+  font-size: 1.7rem;
+  font-weight: 550;
+  margin: 0 0 7px;
+}
+.pyth-heading p,
+.pyth-caption {
+  color: #9aa7b8;
+  font-size: 0.8rem;
+}
+.pyth-fresh {
+  color: #8bd3e9;
+}
+.pyth-muted {
+  color: #a9b2c0;
+  font-size: 0.8rem;
+}
+.pyth-notice {
+  padding: 16px;
+  border: 1px solid #374556;
+  border-radius: 10px;
+  background: #111820;
+  color: #b6c5d6;
+  margin-block: 18px;
+}
+.pyth-notice p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+.pyth-controls {
+  display: flex;
+  align-items: end;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 24px 0 10px;
+}
+.pyth-controls label {
+  display: grid;
+  gap: 7px;
+  color: #a7b4c4;
+  font-size: 0.8rem;
+  flex: 1;
+  min-width: 180px;
+}
+.pyth-controls input,
+.pyth-controls select,
+.pyth-details select {
+  min-height: 44px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #354050;
+  border-radius: 8px;
+  background: #151b23;
+  color: #e7edf4;
+}
+.pyth-price {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-block: 25px 18px;
+}
+.pyth-price strong {
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 550;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+.pyth-price span {
+  color: #9caabd;
+  font-size: 0.85rem;
+}
+.pyth-chart {
+  height: 420px;
+}
+.pyth-chart > div {
+  height: 100%;
+}
+.pyth-empty {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #293340;
+  border-radius: 10px;
+  background: #0f1319;
+  padding: 20px;
+}
+.pyth-empty p {
+  color: #c5d2e2;
+  font-size: 1.2rem;
+}
+.pyth-empty span {
+  color: #8e9fb5;
+  font-size: 0.85rem;
+}
+.pyth-chart-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: #91a1b6;
+  font-size: 0.78rem;
+  margin-block: 12px;
+}
+.pyth-chart-footer p {
+  max-width: 65ch;
+}
+.pyth-mode-note {
+  color: #a9b5c5;
+  padding-block: 16px;
+  border-top: 1px solid #283343;
+  font-size: 0.85rem;
+}
+.pyth-details {
+  font-size: 0.8rem;
+  border-block: 1px solid #293340;
+  color: #aab8cb;
+}
+.pyth-details summary {
+  min-height: 44px;
+  padding-block: 14px;
+}
+.pyth-details dd {
+  margin: 6px 0 15px;
+  overflow-wrap: anywhere;
+  color: #d2ddeb;
+}
+.pyth-details label {
+  display: block;
+  margin-block: 12px;
+}
+@media (max-width: 650px) {
+  .pyth-panel {
+    padding: 18px 12px;
+  }
+  .pyth-controls {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .pyth-controls label {
+    min-width: 0;
+  }
+  .pyth-chart {
+    height: 340px;
+  }
+  .pyth-empty {
+    height: 270px;
+  }
+  .terminal-view-switch {
+    padding-inline: 10px;
+  }
+  .terminal-view-switch button {
+    flex: 1;
+    font-size: 0.82rem;
+    padding-inline: 7px;
+  }
+}

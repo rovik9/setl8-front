@@ -1,0 +1,18 @@
+[
+  {
+    "wallet": "7urBRSkXz6jAoz7j4QnVjgWWVLUxV6nzjZxNEWhxkLeF",
+    "challengeId": "0",
+    "account": "A3ncHBKQRrRNKVaeH9WuhMmwZ22BNoKyeCFsxK6ZwpvU",
+    "walletProfile": "FvFLG5tRaoXXoDWD4WKQbRMjdxU3va3hPATWS2x9QDRz",
+    "platformToken": "4zk4thzdPGNqYghz1orRv6JXMhCkoChhdf9M6zseTy2s",
+    "feeToken": "B8vuS9ViTSvU1YRTHfDefdD8aCaVxiiiiCyjiseC1Dvm"
+  },
+  {
+    "wallet": "Hu2bYqRGjee6SVaK1MgXSFMBF2Lo1CgFYm2eM727TFe6",
+    "challengeId": "1",
+    "account": "6NVT4dV8tvJrYTJNa75r4QFBs7NncDXRpTnoKjgpevzB",
+    "walletProfile": "GkTvorHCdtySNyXMPZVaiqc4HPUpMnCbNXDJW2i7zjSd",
+    "platformToken": "4zk4thzdPGNqYghz1orRv6JXMhCkoChhdf9M6zseTy2s",
+    "feeToken": "B8vuS9ViTSvU1YRTHfDefdD8aCaVxiiiiCyjiseC1Dvm"
+  }
+]

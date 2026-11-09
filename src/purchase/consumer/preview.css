@@ -1,0 +1,267 @@
+.api-preview .purchase-main {
+  max-width: 1200px;
+}
+.consumer-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin: 30px 0;
+}
+.consumer-heading h1 {
+  font-size: 2.7rem;
+  font-weight: 450;
+  letter-spacing: -0.045em;
+  line-height: 1.18;
+  margin: 10px 0;
+}
+.consumer-heading h1 > span {
+  color: #ff2d95;
+}
+.consumer-heading p {
+  color: #a8b6c8;
+  font-size: 0.8rem;
+}
+.consumer-controls {
+  border-block: 1px solid #303640;
+  margin: 20px 0 25px;
+  font-size: 0.76rem;
+}
+.consumer-controls > summary {
+  padding: 15px 0;
+  cursor: pointer;
+}
+.consumer-controls > summary > span {
+  float: right;
+  color: #a7b5c7;
+  font-size: 0.7rem;
+}
+.consumer-controls > div {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 15px 0 22px;
+}
+.consumer-controls label {
+  display: flex;
+  flex: 1;
+  gap: 7px;
+  flex-direction: column;
+  min-width: 220px;
+  color: #b7c3d3;
+}
+.consumer-controls select {
+  padding: 10px;
+  max-width: 100%;
+  min-width: 0;
+  font-size: 0.78rem;
+}
+.consumer-controls p {
+  width: 100%;
+  font-size: 0.68rem;
+  color: #a3b2c4;
+}
+.api-preview .purchase-review .full {
+  margin-top: 17px;
+  font-size: 0.76rem;
+}
+.api-preview .purchase-sizes button {
+  grid-template-columns: 1fr;
+}
+.api-preview .purchase-review dd {
+  font-size: 0.73rem;
+}
+.api-preview .journey-notice p {
+  margin: 0;
+}
+.api-preview .purchase-selection > h2 {
+  margin-top: 12px;
+}
+.consumer-recovery {
+  border: 1px solid #6d5d37;
+  background: #242016;
+  padding: 16px;
+  border-radius: 5px;
+  color: #e0cfaa;
+  font-size: 0.75rem;
+  line-height: 1.7;
+  margin-top: 22px;
+}
+.consumer-recovery p {
+  color: #c5bba4;
+  font-size: 0.73rem;
+  margin: 8px 0 15px;
+}
+.consumer-confirmation,
+.consumer-owned {
+  margin-top: 25px;
+  padding: 26px;
+  border: 1px solid #303640;
+  border-radius: 6px;
+  background: #111318;
+}
+.consumer-confirmation h2,
+.consumer-owned h2 {
+  font-weight: 450;
+  font-size: 1.35rem;
+  margin: 6px 0 0;
+}
+.consumer-confirmation > .section-top > .button {
+  font-size: 0.72rem;
+}
+.consumer-stages {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 23px 0;
+  border-block: 1px solid #2c333e;
+}
+.consumer-stages > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 15px;
+}
+.consumer-stages > div + div {
+  border-left: 1px solid #2c333e;
+}
+.consumer-stages span {
+  font-size: 0.67rem;
+  color: #a8b8cc;
+}
+.consumer-stages strong {
+  font-size: 0.9rem;
+  font-weight: 450;
+  color: #b1dae8;
+}
+.consumer-actual {
+  font-size: 0.78rem;
+  color: #b6cfdb;
+  font-variant-numeric: tabular-nums;
+}
+.consumer-owned > p,
+.consumer-account-detail > p {
+  font-size: 0.78rem;
+  line-height: 1.8;
+  color: #a9b9cd;
+}
+.consumer-account-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 23px;
+}
+.consumer-account-grid > article {
+  padding: 22px;
+  border: 1px solid #3b5663;
+  border-radius: 5px;
+  background: #007ba70b;
+}
+.consumer-account-grid h3 {
+  font-size: 1.65rem;
+  font-weight: 450;
+  letter-spacing: -0.03em;
+  margin: 17px 0 8px;
+}
+.consumer-account-grid p {
+  font-size: 0.73rem;
+  color: #abbdcf;
+}
+.consumer-account-grid dl > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 0.72rem;
+  padding: 10px 0;
+}
+.consumer-account-grid dt {
+  color: #b0bdce;
+}
+.consumer-account-grid dd {
+  margin: 0;
+}
+.consumer-account-grid .button {
+  font-size: 0.75rem;
+  margin-top: 15px;
+}
+.consumer-account-detail {
+  padding: 20px 0 0;
+  border-top: 1px solid #3a424f;
+  margin-top: 22px;
+}
+.consumer-account-detail h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.consumer-diagnostics {
+  margin-top: 25px;
+  border: 1px solid #303640;
+  border-radius: 5px;
+}
+.consumer-diagnostics > summary {
+  padding: 16px 23px;
+  font-size: 0.77rem;
+  cursor: pointer;
+}
+.consumer-diagnostics > details {
+  margin: 20px;
+}
+.api-preview .purchase-review > p {
+  font-size: 0.71rem;
+}
+@media (max-width: 760px) {
+  .consumer-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 25px 0;
+    gap: 8px;
+  }
+  .consumer-heading h1 {
+    font-size: 2rem;
+  }
+  .consumer-heading > div > p {
+    font-size: 0.75rem;
+  }
+  .consumer-controls > summary > span {
+    display: none;
+  }
+  .consumer-controls label {
+    min-width: 0;
+    flex-basis: 100%;
+  }
+  .consumer-controls select {
+    font-size: 0.77rem;
+    width: 100%;
+  }
+  .consumer-confirmation,
+  .consumer-owned {
+    padding: 21px 17px;
+  }
+  .consumer-confirmation > .section-top {
+    flex-wrap: wrap;
+  }
+  .consumer-stages {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .consumer-stages > div {
+    padding: 16px 10px;
+  }
+  .consumer-stages > div:nth-child(3) {
+    border-left: 0;
+    border-top: 1px solid #2c333e;
+  }
+  .consumer-stages > div:nth-child(4) {
+    border-top: 1px solid #2c333e;
+  }
+  .consumer-account-grid {
+    grid-template-columns: 1fr;
+  }
+  .consumer-account-grid > article {
+    padding: 18px;
+  }
+  .api-preview .purchase-sizes button {
+    grid-template-columns: 1fr 1fr;
+  }
+  .consumer-stages strong {
+    font-size: 0.85rem;
+  }
+}
